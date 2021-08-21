@@ -1,9 +1,13 @@
+h3, h2{
+    font-family: 'Playfair Display', serif;
+}
+p{
+    font-family: 'Prompt', sans-serif;
+}
 #intro-cont{
-    font-family: 'Roboto', sans-serif;
-    background-color: #FFF8E1;
+    background-color: #FCF8F8;
 }
 .intro-cont-div > h2{
-    font-family: 'Philosopher', sans-serif;
     font-size: 50px;
     font-weight: 500;
     width: 67%;
@@ -36,16 +40,15 @@
     padding: 115px 15px 120px 15px;
 }
 .intro-heading{
-    font-family: 'Roboto', sans-serif;
     color: #f45d48;
     font-weight: 700;
-    margin-bottom: 15px;
+    font-size: 15px;
+    margin: 0px 0px 24px 0px;
 }
 .h2-tag{
     font-size: 40px;
     font-weight: 400;
-    font-family: 'Philosopher', sans-serif;
-    margin: 10px 0px;
+    margin: 0px 0px 24px 0px;
 }
 .box-tpp > h2{
     width: 80%;
@@ -54,20 +57,21 @@
 .p-tag{
     font-size: 16px;
     line-height: 1.5rem;
-    margin: 10px 0px;
+    margin: 0px 0px 24px 0px;
 }
 .box-tpp > img{
     width: 80px;
     height: 80px;
 }
-#step1{
+#step1, #step2, #step3, #step4{
     padding: 46px 64px;
 }
-.s1-mdiv{
+.s-mdiv{
     padding: 80px 15px 90px 15px;
     width: 80%;
     margin: auto;
     display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 a:link{
@@ -82,14 +86,78 @@ a:visited{
     color: teal;
     text-decoration: none;
 }
-.s1-mdiv > div{
+.s-mdiv > div{
     width: 50%;
 }
-.s1-mdiv > div:nth-child(2){
-    width: 38%;
+.s-div{
+    max-width: 38%;
     margin: auto;
 }
-.s1-img > img{
-    width: 80%;
+.img-odd{
+    max-width: 90%;
     margin: auto;
+}
+.step-even{
+    padding: 0% 20% 0% 0%;
+}
+.img-even{
+    max-width: 100%;
+    padding: 0%;
+}
+#few-words{
+    padding: 130px 15px;
+    width: 95%;
+    margin: 0px auto 0px auto;
+    text-align: center;
+}
+#few-words > h2{
+    width: 50%;
+    margin: 0px auto 15px auto;
+    font-size: 32px;
+    font-weight: 500;
+}
+.few-words-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.few-words-div > img{
+    max-width: 17%;
+    padding: 0px 25px;
+    height: 39px;
+    border: 1px solid rgb(234, 234, 234);
+    border-left: none;
+}
+.few-words-div > p{
+    padding: 10px 25px 10px 25px;
+    max-width: 100%;
+    font-size: 13px;
+    border: 1px solid rgb(234, 234, 234);
+    border-right: none;
+}
+#hey-there{
+    background: #FCF8F8;
+}
+.ht-mdiv{
+    width: 90%;
+    padding: 144px 99px 154px 99px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.ht-mdiv > div{
+    width: 50%;
+    padding: 0px 10px;
+}
+.ht-img{
+    max-width: 70%;
+    margin: 0% 0% 0% 20%;
+}
+.ht-p-tag, .ht-h2-tag{
+    width: 60%;
+    padding: 0px 0px 24px 0px;
+    margin: 0% 0% 0% 10%;
+}
+.ht-h2-tag{
+    font-size: 42px;
 }
