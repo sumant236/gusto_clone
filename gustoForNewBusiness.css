@@ -1,0 +1,95 @@
+#intro-cont{
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFF8E1;
+}
+.intro-cont-div > h2{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    width: 67%;
+}
+#intro-cont > div {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+#intro-cont > div > div{
+    width: 50%;
+    text-align: left;
+}
+.intro-cont-div > button{
+    padding: 12px 20px;
+    font-size: 15px;
+    color: white;
+    background: #f45d48;
+    border: none;
+    border-radius: 5px;
+}
+.intro-cont-img > img{
+    max-width: 100%;
+}
+.box-tpp{
+    max-width: 70%;
+    text-align: center;
+    margin: auto;
+    padding: 115px 15px 120px 15px;
+}
+.intro-heading{
+    font-family: 'Roboto', sans-serif;
+    color: #f45d48;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.h2-tag{
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Philosopher', sans-serif;
+    margin: 10px 0px;
+}
+.box-tpp > h2{
+    width: 80%;
+    margin: auto;
+}
+.p-tag{
+    font-size: 16px;
+    line-height: 1.5rem;
+    margin: 10px 0px;
+}
+.box-tpp > img{
+    width: 80px;
+    height: 80px;
+}
+#step1{
+    padding: 46px 64px;
+}
+.s1-mdiv{
+    padding: 80px 15px 90px 15px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+a:link{
+    color: rgb(2, 100, 100);
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(2, 253, 241);
+    text-decoration: underline;
+}
+a:visited{
+    color: teal;
+    text-decoration: none;
+}
+.s1-mdiv > div{
+    width: 50%;
+}
+.s1-mdiv > div:nth-child(2){
+    width: 38%;
+    margin: auto;
+}
+.s1-img > img{
+    width: 80%;
+    margin: auto;
+}
