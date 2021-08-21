@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time_tools</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .box {
+            width: 93%;
+            margin: 100px auto;
+            padding: 2%
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto;
+        }
+
+        #get-started-btn {
+            margin: auto;
+            width: 140px;
+            margin-top: 15px;
+            min-width: 140px;
+            padding: 12px 20px;
+            background: #f45d48;
+            color: white;
+            border-radius: 5px;
+            border: 1px solid #f45d48;
+            cursor: pointer;
+        }
+
+        .c-red {
+            color: red;
+        }
+
+        #get-started-btn>p {
+            font-size: 15px;
+            margin: 0;
+        }
+
+        .t-center {
+            text-align: center;
+        }
+
+        .bold {
+            font-weight: bold;
+            margin-bottom: 0%;
+        }
+
+        h1 {
+            font-family: "clearface", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-size: 46px;
+            font-weight: 700;
+            line-height: 56px;
+            margin-top: 0;
+        }
+
+        .gcentra-font {
+            font-family: "gcentra", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .img-dim {
+            max-width: 100%;
+        }
+
+        .infoBox p {
+            font-size: 20px;
+            line-height: 27px;
+        }
+
+        .margin-top-50 {
+            margin-top: 50px;
+        }
+
+        .padding-left-40 {
+            padding-left: 40px;
+        }
+
+        .padding-right-40 {
+            padding-right: 40px;
+        }
+
+        .slideshow-container {
+            width: 90%;
+            margin: auto;
+            position: relative;
+            border: 2px solid red;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .slideBox {
+            display: grid;
+            grid-template-columns: 60% 40%;
+            grid-template-rows: auto;
+        }
+
+        .prev,
+        .next {
+            position: absolute;
+            cursor: pointer;
+            padding: 16px;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 0 3px 3px 0;
+            top: 160%;
+        }
+
+        .prev {
+            left: 0%;
+        }
+
+        .next {
+            left: 48%;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 10px;
+            width: 10px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        h2+p {
+            margin: 0%;
+        }
+
+        .E-margin {
+            margin: 20px 0px;
+        }
+
+        .box3 {
+            display: grid;
+            grid-template-columns: 30% 50% 20%;
+            grid-template-rows: auto;
+        }
+
+        #back-fit {
+            background-color: rgb(247, 245, 245);
+            height: 200px;
+            margin-top: 219px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .box3>.infoBox {
+            margin-top: 52px;
+        }
+
+        .white-btn {
+            background-color: rgb(247, 245, 245);
+            border: 1px solid rgb(247, 245, 245);
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .box3>.infoBox+div {
+            margin-top: 72px;
+            margin-left: 93px;
+        }
+
+        .margin-top-80 {
+            margin-top: 80px;
+        }
+
+        #back-fit1 {
+            background-color: rgb(247, 245, 245);
+            height: 444px;
+            margin-top: 320px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .box6 {
+            margin-left: 3%;
+        }
+
+        .box6>.img-box6 {
+            width: 80%;
+        }
+
+        .box6>.img-box6>img {
+            width: 105%;
+        }
+
+        .box6>.infoBox {
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 135px;
+            ;
+        }
+
+        .padding-left-100 {
+            padding-left: 100px;
+        }
+
+        .float {
+            float: left;
+        }
+
+        #back-fit2 {
+            background-color: rgb(247, 245, 245);
+            height: 594px;
+            margin-top: 189px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .width-60 {
+            width: 60%;
+            margin: auto
+        }
+
+        .box9 {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-template-rows: auto;
+        }
+
+        .padding-right-80 {
+            padding-right: 80px;
+        }
+
+        .padding-left-120 {
+            padding-left: 120px;
+        }
+
+        .margin-top-3 {
+            margin-top: 3px;
+        }
+
+        .margin-bottom-0 {
+            margin-bottom: 0px;
+        }
+
+        .box-with-top-margin-0 {
+            width: 93%;
+            margin-top: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2%
+        }
+
+        /* The CSS for box11 starts from here. */
+        #box11 {
+
+            width: 40%;
+            margin: 200px auto;
+            text-align: center;
+        }
+
+        #box11>p {
+            color: red;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        #box11>h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        #box11>button {
+            border-radius: 6px;
+            width: 126px;
+            height: 41px;
+            background-color: red;
+            border: 1px solid red;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box grid">
+        <div class="infoBox margin-top-50 padding-right-40">
+            <h1>The time tools you need,<br />all combined with payroll.</h1>
+            <p>When you use Gusto, your team’s hours, time off, and holidays are easily calculated into payroll.</p>
+            <button id="get-started-btn">
+                <p>Get started</p>
+            </button>
+        </div>
+        <div>
+            <div class="t-center">
+                <img src="https://prod.gusto-assets.com/assets/product/time_tools/illo-time-tracking-1aba02a82e2cdb40ee9a43ae9a8e70822ec2c193b3c53b4eec19cb67c5287c2f.png.webp"
+                    style="max-width: 65%; float: right;" />
+            </div>
+        </div>
+    </div>
+    <div class="box slideBox">
+        <div style="margin-top: 130px">
+            <div class="slideShow-container">
+                <a class=" prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="mySlides">
+                    <img src="https://prod.gusto-assets.com/assets/product/time_tools/time-tracking-1-8fd77a38acec05e05b980683799e397f2112edf65f817c2cd3fde3932da21cca.png.webp"
+                        class="img-dim"">
+                  </div>
+                
+                  <div class=" mySlides">
+                    <img src="https://prod.gusto-assets.com/assets/product/time_tools/time-tracking-2-1597957d9d5d7fa8fab926616b4b0c6c13f946c8c6c26f5604d81c85bf2dd9ff.png.webp"
+                        class="img-dim"">
+                  </div>
+                
+                  <div class=" mySlides">
+                    <img src="https://prod.gusto-assets.com/assets/product/time_tools/time-tracking-3-1cc995c3a10d745cc7a47099ac2132234ebcca69cbd139eeef31fe78e7d78eef.png.webp"
+                        class="img-dim"">
+                  </div>
+
+                </div>
+                <br />
+                <div style=" margin-left: 40%;">
+                    <span class="dot" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+            <div class="infoBox">
+                <p class="c-red">Time and project tracking</p>
+                <h1>Track hourly work and workforce costs the easy way.</h1>
+                <div class="E-margin">
+                    <h2 class="bold">Time tracking for payroll</h2>
+                    <p>Employees and contractors track hours in their Gusto accounts or mobile app. You review and
+                        approve.</p>
+                </div>
+                <div class="E-margin">
+                    <h2 class="bold">Project tracking and workforce costing</h2>
+                    <p>Understand project costs and team efficiency with detailed breakdowns by project, task, employee,
+                        and time period.</p>
+                </div>
+                <div class="E-margin">
+                    <h2 class="bold">Accounting integrations</h2>
+                    <p>Sync hours and costs right with Quickbooks Online or Xero for easier job costing with no extra
+                        work.</p>
+                </div>
+                <div style="display: inline block;">
+                    <p>Want to see if time and project tracking are right for your business? <a style="color: grey;"
+                            href="https://not found">Schedule a call</a></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="box3 box float">
+            <div><img
+                    src="https://prod.gusto-assets.com/assets/product/time_tools/content-preview-146817b0d560a64fa6c5f2170ffe62c2e5b488eb56e4d42234b99f025fdbcb93.png.webp"
+                    class="img-dim" />
+            </div>
+            <div class="infoBox">
+                <p><strong>Is simple time tracking right for you?</strong> Take a closer look at our time tracking tool
+                    and how it works.</p>
+            </div>
+            <div><button class="white-btn">View PDF</button></div>
+        </div>
+        <div id="back-fit"></div>
+        <div class="box grid">
+            <div class="infoBox" style="width: 85%;">
+                <p class="c-red">PTO policies and reporting</p>
+                <h1>Paid time off as unique as your team.</h1>
+                <p>Customize your paid-time-off policies to fit your team’s needs, then run reports with a click of a
+                    button. It’s all organized by date, department, or employee so it’s easy to navigate.</p>
+                <p>And remember, automatically calculated PTO liabilities means your accounting stays headache-free.</p>
+            </div>
+            <div>
+                <img src="https://prod.gusto-assets.com/assets/product/time_tools/product-time-tools-vacation-time-fd275a127c77968866fe4727f908d64de390f42832de898375ac80063dc7d5fb.jpg.webp"
+                    class="img-dim" />
+            </div>
+        </div>
+        <div class="box grid">
+            <div class="infoBox" style="width: 90%;">
+                <p class="c-red">Time off tracker</p>
+                <h1>View time off changes at a glance.</h1>
+                <p>Your answer to, “how did my time off balance get this way?” Chronologically track and understand
+                    adjustments to employee time off.</p>
+                <p>Plus, your team can easily view their own PTO changes right from their Gusto accounts</p>
+            </div>
+            <div>
+                <img src="https://prod.gusto-assets.com/assets/product/time_tools/product-time-tools-ee-467b882a76aeec9618f303743077661e7bac7af3214011b84e9496f520ffc9d4.jpg.webp"
+                    class="img-dim" />
+            </div>
+        </div>
+    </div>
+    <div class="box grid box6 float">
+        <div class="img-box6">
+            <img
+                src="https://prod.gusto-assets.com/assets/product/time_tools/product-time-tools-requests-a1b7531b2038d3d87a893fa48d8520f4752c5384e3170f72c9c40af6763d553b.png.webp" />
+        </div>
+        <div class="infoBox">
+            <p>Time-off requests</p>
+            <h1>Give your team the time off they need.</h1>
+            <p>Once your PTO policy is set, employees can submit vacation and sick days for approval - or managers can
+                submit time-off on their behalf. It all syncs to calendars and payroll automatically.</p>
+        </div>
+    </div>
+    <div id="back-fit1"></div>
+    <div class="box grid">
+        <div class="infoBox margin-top-80" style="width: 85%;">
+            <p class="c-red">Holiday pay</p>
+            <h1>Pick your holidays and pay your team.</h1>
+            <p>Select from federal holidays or upgrade to create your own custom holidays. They’ll both be automatically
+                approved and populated into payroll as default paid time off. Easy.</p>
+        </div>
+        <div>
+            <img src="https://prod.gusto-assets.com/assets/product/time_tools/product-time-tools-paid-holiday-10404257851812512c0b2e6891a2e2e27b1606fbbdd155ae5b6d5baef017a7c8.jpg.webp"
+                class="img-dim" />
+        </div>
+    </div>
+    <div class="box grid float">
+        <div class="margin-top-50">
+            <img src="https://prod.gusto-assets.com/assets/product/time_tools/product-time-tools-calendar-a61af3c8ed3d27c6436b1bc2d64ae809bd3f2d7dde4019c2fd48f89526d2ff6d.png.webp"
+                class="img-dim" />
+        </div>
+        <div class="infoBox margin-top-80 padding-left-100" style="width: 85%;">
+            <p>
+                Calendar sync</p>
+            <h1>Key dates and tasks, always on your calendar.</h1>
+            <p>Approved time off, key dates, and payroll reminders automatically populate on your favorite calendar —
+                making it that much easier to tackle your to-do list.</p>
+            <p>We support Google, Outlook, and iCal.</p>
+        </div>
+    </div>
+    <div id="back-fit2 "></div>
+    <div class="infoBox t-center width-60">
+        <p class="c-red">Okay, let’s review</p>
+        <h1 class="margin-bottom-0">The best time tools? The ones that sync with payroll.</h1>
+    </div>
+    <div class="box-with-top-margin-0 box9">
+        <div class="infoBox padding-left-120 padding-right-80 margin-top-50">
+            <div>
+                <p class="bold ">Track everything in one place.</p>
+                <p class="margin-top-3">One password to remember. One place to manage it all. One click to sync with
+                    payroll.</p>
+            </div>
+            <div>
+                <p class="bold ">Automate the most tedious tasks.</p>
+                <p class="margin-top-3">See ya later, spreadsheets. We’ll automatically calculate your team’s wages and
+                    track time off.</p>
+            </div>
+            <div>
+                <p class="bold ">Don’t sweat compliance details.</p>
+                <p class="margin-top-3">Store wage records automatically and get help with compliance, overtime, and
+                    more.</p>
+            </div>
+        </div>
+        <div>
+            <img src="https://prod.gusto-assets.com/assets/product/time_tools/product-time-tools-payday-b1563c8563a1421c06de998e1c26dc2d54223911a243874e95a7e8b9c2e1a06e.jpg.webp"
+                class="img-dim" />
+        </div>
+    </div>
+    <div id="box11">
+        <p>Prices now start at just $45/month</p>
+        <h1>Get your team working
+            with Gusto.</h1>
+        <button>Get Started</button>
+    </div>
+    <script>
+        var slideIndex = 0;
+        slideShow(slideIndex);
+
+        function currentSlide(n) {
+            slideShow(slideIndex = n);
+        };
+
+        function plusSlides(n) {
+            slideShow(slideIndex += n);
+        }
+
+        function slideShow(n) {
+            var slides = document.getElementsByClassName('mySlides');
+            var dots = document.getElementsByClassName('dot');
+            if (slideIndex > slides.length - 1) {
+                slideIndex = 1;
+            }
+            if (slideIndex < 0) {
+                slideIndex = slides.length - 1;
+            }
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (var i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "")
+            }
+            slides[slideIndex].style.display = "block";
+            dots[slideIndex].className += " active";
+        }
+    </script>
+</body>
+
+</html>
