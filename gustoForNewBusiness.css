@@ -1,7 +1,7 @@
 h3, h2{
     font-family: 'Playfair Display', serif;
 }
-p{
+p, a{
     font-family: 'Prompt', sans-serif;
 }
 #intro-cont{
@@ -22,7 +22,7 @@ p{
     width: 50%;
     text-align: left;
 }
-.intro-cont-div > button{
+.intro-cont-div > button, #last-point > div > button{
     padding: 12px 20px;
     font-size: 15px;
     color: white;
@@ -56,6 +56,7 @@ p{
 }
 .p-tag{
     font-size: 16px;
+    font-weight: 300;
     line-height: 1.5rem;
     margin: 0px 0px 24px 0px;
 }
@@ -137,27 +138,157 @@ a:visited{
 }
 #hey-there{
     background: #FCF8F8;
+    margin: 0%;
 }
 .ht-mdiv{
-    width: 90%;
-    padding: 144px 99px 154px 99px;
+    width: 80%;
+    padding: 144px 102px 154px 102px;
     margin: auto;
     display: flex;
     align-items: center;
 }
 .ht-mdiv > div{
     width: 50%;
+    margin: auto;
     padding: 0px 10px;
 }
 .ht-img{
-    max-width: 70%;
+    max-width: 85%;
     margin: 0% 0% 0% 20%;
 }
 .ht-p-tag, .ht-h2-tag{
-    width: 60%;
+    width: 70%;
     padding: 0px 0px 24px 0px;
-    margin: 0% 0% 0% 10%;
+    margin: 0% 0% 0% 30%;
 }
 .ht-h2-tag{
     font-size: 42px;
+}
+.dropdown-cont{
+    display: none;
+    position: relative;
+    max-width: 40%;
+}
+.ques-mdiv{
+    max-width: 90%;
+    margin: 0% auto;
+    padding: 80px 15px 90px 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.ques-h2{
+    margin: 0px 0px 40px 0px;
+    font-size: 42px;
+}
+.dropdown > a{
+    width: 50%;
+    color: black;
+    font-size: 25px;
+}
+.dropdown > a:hover{
+    padding-left: 10px;
+    color: darkcyan;
+    text-decoration: underline;
+}
+.arrow {
+    border: solid #0a8080;
+    border-width: 0 3px 3px 0;
+    border-radius: 0;
+    display: inline-block;
+    padding: 6px;
+    transform: rotate(-45deg);
+    margin-top: 112%;
+}
+.dropdown{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.ques-mdiv > div{
+    margin-bottom: 80px;
+}
+.ea-mdiv{
+    max-width: 90%;
+    margin: auto;
+    padding: 80px 15px 90px 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.ea-mdiv > div{
+    max-width: 22%;
+    margin: 0% 0.5%;
+}
+.with-border{
+    box-shadow: 0.5px 0.5px 4px rgb(209, 208, 208), -0.5px -0.5px 4px rgb(196, 194, 194);
+}
+.with-border > img{
+    max-width: 100%;
+}
+.with-border > div{
+    padding: 20px;
+}
+.with-border > div > a{    
+    font-family: 'Prompt', sans-serif;
+}
+#the-people-platform2{
+    text-align: center;
+    background-color: #f0ebe9;
+}
+.tpp2-mdiv{
+    padding: 80px 15px 90px 15px;
+}
+.box1-tpp2{
+    max-width: 50%;
+    margin: auto;
+}
+.box1-tpp2 > p, .box1-tpp2 > h2 {
+    margin: 0px 0px 10px 0px;
+}
+.box1-tpp2 > h3{
+    margin: 0px 15px 15px 15px;
+}
+.box2-tpp2{
+    font-size: 14px;
+    font-weight: 400px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 55%;
+    margin: 20px auto 0px auto;
+}
+.box2-tpp2 > div{
+    display: flex;
+    flex-direction: column;
+    width: 20%
+}
+.box2-tpp2 > div > img{
+    width: 50px;
+    height: 50px;
+    margin: 0px auto;
+    padding-bottom: 15px;
+}
+.box2-tpp2 > div > a:link{
+    color: black;
+    text-decoration: none;
+}
+.box2-tpp2 > div > a:visited{
+    color: black;
+    text-decoration: none;
+}
+.box2-tpp2 > div > a:hover{
+    color: teal;
+    text-decoration: underline;
+}
+#last-point{
+    padding: 80px 15px 90px 15px;
+    text-align: center;
+}
+#last-point > div{
+    width: 30%;
+    margin: auto;
+    font-weight: 700;
+}
+#last-point > div > p{
+    margin: 0px 0px 25px 0px;
 }
