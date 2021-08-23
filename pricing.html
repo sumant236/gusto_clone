@@ -8,6 +8,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap" rel="stylesheet">
         <style>
+            body{
+                margin: 0;
+            }
             h1{
                 font-family: 'Playfair Display', serif;
             }
@@ -49,7 +52,7 @@
                 margin: auto;
                 margin-top: 70px;
                 display: grid;
-                max-width: 85%;
+                width: 85%;
                 grid-template-columns: 31.2% 31.2% 31.2%;
                 grid-gap: 40px;
             }
@@ -130,11 +133,12 @@
             }
             .contractor-div{
                 border:1px solid rgb(225, 225, 227);
-                width: 80%;
+                max-width: 80%;
                 margin: auto;
                 background-color: white;
                 display: flex;
                 padding: 30px 40px;
+                border-radius: 5px;
             }
             .cont-div1 > h3{
                 margin: 0;
@@ -179,7 +183,7 @@
             }
             .col-1{
                 flex: 0 0 33.333333%;
-                max-width: 33.3333333%;
+                width: 33.3333333%;
                 padding-bottom: 40px;
                 padding-left: 15px;
                 padding-right: 15px;
@@ -197,7 +201,7 @@
             .col-2{
                 margin-left: 10%;
                 flex: 0 0 50%;
-                max-width: 50%;
+                width: 50%;
                 padding-left: 15px;
                 padding-right: 15px;
             }
@@ -222,7 +226,7 @@
             }
             .col-2-1{
                 flex: 0 0 47.1%;
-                max-width: 50%;
+                width: 50%;
                 padding-left: 15px;
                 padding-right: 15px;
             }
@@ -337,7 +341,235 @@
                 display: inline-block;
                 padding: 6px;
                 transform: rotate(-45deg);
-                margin-top: 112%;
+                margin-top: 50px;
+            }
+            @media only screen and (max-width: 766px) {
+                .plans-div > div > img{
+                    width: 100px;
+                }
+                .plans-div{
+                    padding-top: 30px;
+                }
+                .plans-div > h1{
+                    font-size: 40px;
+                    line-height: 48px;
+                }
+                .plans-para{
+                    margin-top: 20px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    font-size: 17px;
+                }
+                .price-plans{
+                    margin-top: 30px;
+                    width: 95%;
+                    grid-template-columns: auto;
+                }
+                .plan h3{
+                    font-size: 29px;
+                }
+                .plans-section{
+                    display: none;
+                }
+                .contractor-div{
+                    flex-direction: column;
+                    margin-top: 40px;
+                }
+                .cont-div1 > h3{
+                    font-size: 29px;
+                    line-height: 36px;
+                }
+                .cont-div2{
+                    margin-left: 0;
+                }
+                .cont-div2 > button{
+                    width: 100%;
+                }
+                .row-out{
+                    flex-direction: column;
+                }
+                .cont{
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                }
+                .col-1{
+                    flex: 0 0 100%;
+                    width: 100%;
+                    padding-left: 0;
+                    padding-right: 0;
+                    padding-bottom: 0;
+                }
+                .col-1 > h2{
+                    font-size: 26px;
+                    line-height: 36px;
+                    font-weight: 600;
+                    margin-bottom: 15px;
+                }
+                .col-1 > div{
+                    display: none;
+                }
+                .col-2{
+                    flex: 0 0 100%;
+                    width: 100%;
+                    margin-left: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+                .row{
+                    margin-left: 0;
+                    margin-right: 0;
+                    flex-direction: column;
+                }
+                .col-2-1{
+                    margin-bottom: 20px;
+                    width: 100%;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+                .col-2-2 > div{
+                    display: none;
+                }
+                .col-2 h3{
+                    font-size: 23px;
+                    line-height: 30px;
+                }
+                #w-brdr{
+                    margin-top: 20px;
+                    border-bottom: 2px solid white;
+                }
+                .tandc-text{
+                    margin-top: 40px;
+                }
+                .table-div{
+                    display: none;
+                }
+                .faq-div{
+                    width: 93%;
+                    padding-top: 10px;
+                }
+                #box8{
+                    grid-template-columns: auto 0;
+                }
+                #box8 h1 {
+                    font-size: 32px;
+                }
+                .gridBox8 h3 {
+                    font-size: 23px;
+                }
+            }
+            @media only screen and (min-width: 768px) and (max-width: 1200px){
+                .plans-div{
+                    padding-top: 30px;
+                }
+                .plans-div > h1{
+                    font-size: 40px;
+                    line-height: 48px;
+                }
+                .plans-para{
+                    margin-top: 20px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    font-size: 17px;
+                }
+                .price-plans{
+                    margin-top: 60px;
+                    width: 90%;
+                    grid-template-columns: auto;
+                }
+                .plan h3{
+                    font-size: 29px;
+                }
+                .plans-section{
+                    display: none;
+                }
+                .contractor-div{
+                    margin-top: 40px;
+                }
+                .cont-div1 > h3{
+                    font-size: 29px;
+                    line-height: 36px;
+                }
+                .cont-div2>button{
+                    width: 120px;
+                }
+                .row-out{
+                    flex-direction: column;
+                }
+                .cont{
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                }
+                .col-1{
+                    flex: 0 0 100%;
+                    width: 100%;
+                    padding-left: 0;
+                    padding-right: 0;
+                    padding-bottom: 0;
+                }
+                .col-1 > h2{
+                    font-size: 29px;
+                    line-height: 36px;
+                    font-weight: 600;
+                    margin-bottom: 15px;
+                }
+                .col-1 > div{
+                    display: none;
+                }
+                .col-2{
+                    flex: 0 0 100%;
+                    width: 100%;
+                    margin-left: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+                .row{
+                    margin-left: 0;
+                    margin-right: 0;
+                    flex-direction: column;
+                }
+                .col-2-1{
+                    margin-bottom: 20px;
+                    width: 100%;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+                .col-2-2 > div{
+                    display: none;
+                }
+                .col-2 h3{
+                    font-size: 23px;
+                    line-height: 30px;
+                }
+                #w-brdr{
+                    margin-top: 20px;
+                    border-bottom: 2px solid white;
+                }
+                .tandc-text{
+                    margin-top: 40px;
+                }
+                #g-brdr{
+                    margin-top: 20px;
+                    border-bottom: 2px solid #eaeaea;
+                }
+                .table-div h2{
+                    font-size: 42px;
+                    line-height: 48px;
+                }
+                .faq-div{
+                    width: 93%;
+                    padding-top: 10px;
+                }
+                #box8{
+                    grid-template-columns: auto 0;
+                }
+                #box8 h1 {
+                    font-size: 46px;
+                    line-height: 48px;
+                }
+                .gridBox8 h3 {
+                    font-size: 29px;
+                    line-height: 36px;
+                }
             }
         </style>
     </head>
@@ -562,6 +794,7 @@
                                     <div></div>
                                     <p><strong>No administration fees</strong></p>
                                     <p><strong>Pay only for premiums</strong></p>
+                                    <div id="w-brdr"></div>
                                 </div>
                                 <div class="col-2-1">
                                     <h3>Gusto Wallet</h3>
@@ -569,6 +802,7 @@
                                     <div></div>
                                     <p><strong>No account minimums</strong></p>
                                     <p><strong>No account or overdraft fees¹</strong></p>
+                                    <div id="w-brdr"></div>
                                 </div>
                             </div>
                             <div class="row">
@@ -583,6 +817,7 @@
                                     <div></div>
                                     <p><strong>Administration included</strong></p>
                                     <p><strong>Pay only for premiums</strong></p>
+                                    <div id="w-brdr"></div>
                                 </div>
                                 <div class="col-2-1">
                                     <h3>Health reimbursement²</h3>
@@ -590,6 +825,7 @@
                                     <div></div>
                                     <p><strong>$15/mo per employee</strong></p>
                                     <p><strong>Pick a monthly contribution (up to a max)</strong></p>
+                                    <div id="w-brdr"></div>
                                 </div>
                             </div>
                             <div class="row">
@@ -605,6 +841,7 @@
                                     <p><strong>Starts at $49/month plus</strong></p>
                                     <p><strong>$8/participating employee</strong></p>
                                     <p><strong>No setup fee</strong></p>
+                                    <div id="w-brdr"></div>
                                 </div>
                                 <div class="col-2-1">
                                     <h3>529 college savings</h3>
@@ -613,6 +850,7 @@
                                     <p><strong>$6/mo per participant</strong></p>
                                     <p><strong>$18/mo minimum</strong></p>
                                     <p><strong>No setup fee</strong></p>
+                                    <div id="w-brdr"></div>
                                 </div>
                             </div>
                         </div>
@@ -639,6 +877,7 @@
                                     <div></div>
                                     <p style="color: #087575;"><strong>$2.50/mo per participant</strong></p>
                                     <p style="color: #087575;"><strong>No minimum</strong></p>
+                                    <div id="g-brdr"></div>
                                 </div>
                                 <div class="col-2-1">
                                     <h3>Commuter benefits</h3>
@@ -646,11 +885,12 @@
                                     <div></div>
                                     <p style="color: #087575;"><strong>$4/mo per participant</strong></p>
                                     <p style="color: #087575;"><strong>$20/mo minimum</strong></p>
+                                    <div id="g-brdr"></div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-2-2">
-                                    <div style="border: 1px solid #eaeaea;"></div>
+                                    <div style="border-bottom: 1px solid #eaeaea;"></div>
                                 </div>
                             </div>
                             <div class="row">
@@ -753,8 +993,6 @@
                             <div>
                                 <h1>Pricing FAQs</h1>
                             </div>
-                            <div></div>
-                            <div></div>
                         </div>
                         <div class="gridBox8">
                             <div>
@@ -768,7 +1006,7 @@
                                 <h3>Do I have to sign a long-term contract?</h3>
                             </div>
                             <div class="extraSpace"></div>
-                            <div><i class="arrow"></i></div>
+                            <div><i class="arrow" style="margin-top: 35px;"></i></div>
                         </div>
                         <div class="gridBox8">
                             <div>
@@ -796,21 +1034,21 @@
                                 <h3>How do you bill for contractors?</h3>
                             </div>
                             <div class="extraSpace"></div>
-                            <div><i class="arrow"></i></div>
+                            <div><i class="arrow" style="margin-top: 35px;"></i></div>
                         </div>
                         <div class="gridBox8">
                             <div>
                                 <h3>How do I sign up for Gusto?</h3>
                             </div>
                             <div class="extraSpace"></div>
-                            <div><i class="arrow"></i></div>
+                            <div><i class="arrow" style="margin-top: 35px;"></i></div>
                         </div>
                         <div class="gridBox8">
                             <div>
                                 <h3>What tax forms will Gusto file for me?</h3>
                             </div>
                             <div class="extraSpace"></div>
-                            <div><i class="arrow"></i></div>
+                            <div><i class="arrow" style="margin-top: 35px;"></i></div>
                         </div>
                         <div class="gridBox8">
                             <div>
@@ -824,14 +1062,14 @@
                                 <h3>Is it easy to switch?</h3>
                             </div>
                             <div class="extraSpace"></div>
-                            <div><i class="arrow"></i></div>
+                            <div><i class="arrow" style="margin-top: 35px;"></i></div>
                         </div>
                         <div class="gridBox8">
                             <div>
                                 <h3>I need more answers. Who can I contact?</h3>
                             </div>
                             <div class="extraSpace"></div>
-                            <div><i class="arrow"></i></div>
+                            <div><i class="arrow" style="margin-top: 35px;"></i></div>
                         </div>
                         <div class="gridBox8">
                             <div>
