@@ -292,3 +292,50 @@ a:visited{
 #last-point > div > p{
     margin: 0px 0px 25px 0px;
 }
+footer{
+    width: 90%;
+    padding: 55px 15px 50px 15px;
+    margin: auto;
+    font-size: 15px;
+}
+.cont{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+#talk-shop{
+    display: flex;
+    margin-bottom: 10px;
+    padding: 0px 15px;
+}
+#talk-shop > div{
+    border-top: 1px solid #e7e7ec;
+    width: 66.666%;
+    margin: auto;
+}
+.cont > div{
+    padding: 0px 15px 40px 15px;
+}
+.f-title{
+    color: black;
+    font-weight: 600;
+    margin: 0px 0px 10px 0px;
+}
+.blue-text{
+    color: #0A8080;
+    margin: 0px 0px 10px 0px;
+}
+.grey-text{
+    color: #525257;
+    margin: 0px 0px 10px 0px;
+}
+.subtitle{
+    color: #525257;
+    margin: 0px 0px 10px 0px;
+}
+.subtitle:hover, .blue-text:hover{
+    color: #007bff;
+}
+.subtitle-a{
+    font-weight: 300;
+    color: black;
+}

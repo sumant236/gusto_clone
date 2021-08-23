@@ -1,8 +1,12 @@
-h3, h2{
+h1, h3, h2, h5{
     font-family: 'Playfair Display', serif;
 }
 p, a{
     font-family: 'Prompt', sans-serif;
+}
+body{
+    max-width: 80%;
+    margin: auto;
 }
 #intro{
     max-width: 95%;
@@ -61,11 +65,12 @@ p, a{
     margin: 0px 15px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     text-align: center;
     padding: 10px 15px 120px 15px;
 }
 .multi-cont{
-    max-width: 16%;
+    width: 16%;
     padding: 0px 15px;
 }
 .multi-p-tags{
@@ -95,7 +100,7 @@ a{
     max-width: 33.33%;
     padding: 15px;
 }
-.box1-ol, .box2-ol, .box2-doc, .box1-doc{
+.box1-ol, .box2-ol, .box2-oc, .box1-oc{
     margin-left: 8.33%;
 }
 .box2 > img{
@@ -160,17 +165,32 @@ a{
     border: 1px solid gray;
     border-right: none;
 }
-.documents-img{
-    width: 80%;
+.documents-mdiv{
+    display: grid;
+    padding: 215px 25px 90px 25px;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: 'box1 box2'
+                         'box3 box4'
+                         'box3 box4';
+    gap: 0px;
 }
-.documents-img > img{
-    max-width: 100%;
-    margin-left: 81.4%;
+#B1{
+    grid-area: box1;
 }
-.documents-div > div{
-    margin-top: -106px;
+#B2{
+    grid-area: box2;
+    margin-left: 25%;
 }
-.box2-doc > img, .box2-doc > img{
+#B3{
+    grid-area: box3;
+    padding-top: 20%;
+    max-width: 70%;
+}
+#B4{
+    grid-area: box4;
+    margin-top: -5px;
+}
+.box2-doc > img{
     max-width: 95%;
     box-shadow: 1px 1px 10px rgb(209, 208, 208), -1px -1px 10px rgb(196, 194, 194);   
 }
@@ -183,31 +203,32 @@ a{
     max-width: 40%;
     margin: 100px auto;
 }
-.cont > img{
-    max-width: 100%;
-    padding: 30px 30px 10px 30px;
+.cont1 > img{
+    max-width: 90%;
+    padding: 20px 20px 10px 20px;
 }
-.cont > p{
+.cont1 > p{
     font-size: 17px;
     text-align: center;
     font-weight: 400;
-    padding: 0px 20px 30px 20px;
+    padding: 0px 10px 20px 10px;
 }
 #container{
-    max-width: 95%;
+    max-width: 90%;
     margin: 0px auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-.cont{
-    height: 215px;
-    margin: 3% 4%;
+.cont1{
+    width: 160px;
+    height: 195px;
+    margin: 25px 40px;
     display: flex;
     flex-direction: column;
     border: none;
-    box-shadow: 1px 1px 10px rgb(209, 208, 208), -1px -1px 10px rgb(196, 194, 194);
+    box-shadow: 0.1px 0.1px 10px rgb(209, 208, 208), -0.1px -0.1px 10px rgb(196, 194, 194);
 }
 .tm-checklist-mdiv{
     padding: 380px 25px 120px 25px;
@@ -291,12 +312,14 @@ a{
     font-weight: 400px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     max-width: 55%;
     margin: 20px auto 0px auto;
 }
 .box2-tpp > div{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     width: 20%
 }
 .box2-tpp > div > img{
@@ -328,4 +351,295 @@ a{
 }
 #last-point > div > p{
     margin: 0px 0px 25px 0px;
+}
+footer{
+    width: 90%;
+    padding: 55px 15px 50px 15px;
+    margin: auto;
+    font-size: 15px;
+}
+.cont2{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+#talk-shop{
+    display: flex;
+    margin-bottom: 10px;
+    padding: 0px 15px;
+}
+#talk-shop > div{
+    border-top: 1px solid #e7e7ec;
+    width: 66.666%;
+    margin: auto;
+}
+.cont2 > div{
+    padding: 0px 15px 40px 15px;
+}
+.f-title{
+    color: black;
+    font-weight: 600;
+    margin: 0px 0px 10px 0px;
+}
+.blue-text{
+    color: #0A8080;
+    margin: 0px 0px 10px 0px;
+}
+.grey-text{
+    color: #525257;
+    margin: 0px 0px 10px 0px;
+}
+.subtitle{
+    color: #525257;
+    margin: 0px 0px 10px 0px;
+}
+.subtitle:hover, .blue-text:hover{
+    color: #007bff;
+}
+.subtitle-a{
+    font-weight: 300;
+    color: black;
+}
+@media screen and (max-width: 1150px){
+    #image-top > div:nth-child(1){
+        display:none
+    }
+    #image-top > div:nth-child(3){
+        display: none;
+    }
+    .shadowing-images{
+        text-align: center;
+        margin: 0px 0px 0px 0px
+    }
+}
+@media screen and (max-width: 990px) {
+    body{
+        max-width: 100%;
+    }
+    .p-tag, .multi-p-tags{
+        font-size: 16px;
+    }
+    .intro-heading2, #few-words > p{
+        font-size: 42px;
+    }
+    .multi-h4-tags{
+        font-weight: 600;
+        font-size: 17px;
+    }
+    #intro1_1 > p{
+        width: 60%;
+        font-size: 17px;
+    }
+    .h2-tag{
+        font-size: 32px;
+    }
+    .offer-letters-mdiv{
+        flex-direction: column;
+    }
+    .box1{
+        text-align: center;
+        max-width: 70%;
+    }
+    .box2 > img{
+        max-width: 100%;
+        margin: 0px auto;
+        padding-top: 50px;
+    }
+    .box1-ol, .box2-ol, .box2-oc, .box1-oc{
+        margin: 0%;
+    }
+    .offer-letters-video > video{
+        width: 40%;
+        padding: 67px 27% 0% 27%;
+    }
+    .onboarding-checklist-mdiv{
+        flex-direction: column-reverse;
+    }
+    .few-words-div > img{
+        height: 40px;
+    }
+    .documents-mdiv{
+        grid-template-columns: repeat(1, 100%);
+        grid-template-areas: 'box3'
+                             'box2'
+                             'box4';
+    padding: 90px 25px 80px 25px;
+    margin: 5%;
+    }
+    #B3{
+        max-width: 70%;
+        margin: auto;
+        padding: 0%;
+    }
+    #B4{
+        width: 70%;
+        margin: -5px auto 0px auto;
+    }
+    #B4>img{
+        padding: 0%;
+    }
+    #software-setup{
+        max-width: 60%;
+    }
+    .cont1{
+        box-shadow: none;
+    }
+    .tm-checklist-mdiv{
+        flex-direction: column-reverse;
+    }
+    .tm-checklist-mdiv > div{
+        width: 100%;
+        margin: 0px auto;
+        padding: 0px 14%;
+    }
+    .blue-box-div{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .blue-box-div > div:nth-child(even){
+        border: none;
+        border-bottom: 2px solid rgb(14, 197, 230);
+        height: 0px;
+        width: 270px;
+        margin: 40px auto;
+    }
+    .blue-box-div > div{
+        max-width: 70%;
+        margin: auto;
+    }
+    .box1-tpp{
+        max-width: 90%;
+    }
+    .box2-tpp{
+        max-width: 90%;
+    }
+    .cont2{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+@media screen and (max-width: 750px) {
+    .shadowing-images > img{
+        width: 80%;
+        margin: auto;
+        padding: 0px 0px 50px 0px;
+    }
+    .multi-cont{
+        width: 30%;
+        padding: 40px;
+    }
+    .box1{
+        max-width: 90%;
+    }
+    .h2-tag{
+        font-size: 29px;
+    }
+    #few-words > p{
+        font-size: 25px;
+    }
+    #few-words{
+        padding-bottom: 0px;
+    }
+    #B2 > img{
+        max-width: 40%;
+    }
+    #software-setup > p, #software-setup > h2{
+        width: 90%;
+    }
+    .box1-tm{
+        padding-left: 0%;
+    }
+    .box2-tm{
+        display: none;
+    }
+    .blue-box-div > div{
+        max-width: 70%;
+        margin: auto;
+    }
+    .box1-tpp{
+        max-width: 90%;
+    }
+    .box2-tpp{
+        max-width: 60%;
+    }
+    .box2-tpp > div{
+        width: 20%;
+        padding: 20px;
+    }
+    #last-point{
+        max-width: 90%;
+        margin: auto;
+    }
+    .last-h2-tag{
+        max-width: 90%;
+        margin: auto;
+    }
+    .cont2{
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+    }   
+}
+@media screen  and (max-width: 500px){
+    #intro{
+        width: 100%;
+        padding: 0px;
+    }
+    .intro-heading2, #intro1_1 > p{
+        width: 100%;
+        margin: 0px;
+    }
+    img{
+        max-width: 100%;
+    }
+    #image-top, #multi-tabs{
+        padding-bottom: 0px;
+    }
+    .multi-cont{
+        width: 25%;
+        padding: 20px;
+    }
+    .multi-cont >a >  h4, .multi-cont >a> p{
+        font-size: 13px;
+    }
+    .offer-letters-video{
+        display: none;
+    }
+    .onboarding-checklist-mdiv{
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    #few-words{
+        padding-top: 40px;
+    }
+    .few-words-div{
+        flex-direction: column;
+    }
+    .few-words-div > p, .few-words-div > img{
+        max-width: 100%;
+        border-left: none;
+        border-right: none;
+    }
+    .few-words-div > p{
+        border: none;
+    }
+    .offer-letters-mdiv, .documents-mdiv{
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+    .documents-mdiv{
+        padding: 0px 0px 20px 0px;
+    }
+    #B3, #software-setup{
+        max-width: 90%;
+        margin: auto;
+    }
+    .tm-checklist-mdiv{
+        padding: 50x 0px 40px 0px;
+    }
+    .blue-box-mdiv{
+        padding: 0px;
+        margin: 0px auto;
+    }
+    .blue-h1{
+        font-size: 32px;
+    }
 }
