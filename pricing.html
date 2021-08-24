@@ -100,6 +100,10 @@
                 border: 1px solid rgb(244,93,72);
                 color: rgb(244,93,72);
             }
+            .plan > button:hover{
+                background-color: rgb(244,93,72);
+                color: white;
+            }
             .details-table > p{
                 margin: 0;
                 font-size: 17px;
@@ -131,6 +135,9 @@
                 color: rgb(43, 171, 173);
                 font-size: 15px;
                 font-weight: 500;
+            }
+            .plans-section > p:hover{
+                text-decoration: underline;
             }
             .contractor-div{
                 border:1px solid rgb(225, 225, 227);
@@ -164,6 +171,10 @@
                 border: 1px solid rgb(244,93,72);
                 color: rgb(244,93,72);
             }
+            .cont-div2>button:hover{
+                background-color: rgb(244,93,72);
+                color: white;
+            }
             .cont-div2 p{
                 font-size: 15px;
                 font-weight: 500;
@@ -188,6 +199,9 @@
                 padding-bottom: 40px;
                 padding-left: 15px;
                 padding-right: 15px;
+            }
+            #highlight:hover{
+                color: #0A8080;
             }
             .col-1 > h2{
                 margin-bottom: 60px;
@@ -349,7 +363,6 @@
                 left: 0;
                 top: 0;
                 right: 0;
-                bottom: 0;
             }
             .header{
                 background-color: white;
@@ -388,6 +401,56 @@
                 padding: 0 15px;
                 border-radius: 5px;
             }
+            footer{
+            width: 90%;
+            padding: 55px 15px 50px 15px;
+            margin: auto;
+            font-size: 15px;
+        }
+        .f-cont{
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+        }
+        #talk-shop{
+            display: flex;
+            margin-bottom: 10px;
+            padding: 0px 15px;
+        }
+        #talk-shop > div{
+            border-top: 1px solid #e7e7ec;
+            width: 66.666%;
+            margin: auto;
+        }
+        .f-cont > div{
+            padding: 0px 15px 40px 15px;
+        }
+        .f-title{
+            color: black;
+            font-weight: 600;
+            margin: 0px 0px 10px 0px;
+        }
+        .blue-text{
+            color: #0A8080;
+            margin: 0px 0px 10px 0px;
+        }
+        .grey-text{
+            color: #525257;
+            margin: 0px 0px 10px 0px;
+        }
+        .subtitle{
+            color: #525257;
+            margin: 0px 0px 10px 0px;
+        }
+        .blue-text:hover{
+            text-decoration: underline;
+        }
+        .subtitle:hover{
+            color: #0A8080;
+        }
+        .subtitle-a{
+            font-weight: 300;
+            color: black;
+        }
             @media screen and (max-width: 1150px) {
                 .nav-bar{
                     position: static;
@@ -512,8 +575,16 @@
                 .gridBox8 h3 {
                     font-size: 23px;
                 }
+                .f-cont{
+                    display: grid;
+                    grid-template-columns: repeat(1, 100%);
+                }
             }
             @media only screen and (min-width: 768px) and (max-width: 1200px){
+                .f-cont{
+                    display: grid;
+                    grid-template-columns: repeat(2, 50%);
+                }
                 .plans-div{
                     padding-top: 30px;
                 }
@@ -1073,7 +1144,7 @@
                     </p></div>
                 </div>
                 <div class="t-center">
-                    <button><p>See all features</p></button>
+                    <button><p id="highlight">See all features</p></button>
                 </div>
             </div>
             <div class="faq-div">
@@ -1086,84 +1157,84 @@
                         </div>
                         <div class="gridBox8">
                             <div>
-                                <h3>Can I upgrade or downgrade at any time?</h3>
+                                <h3 id="highlight">Can I upgrade or downgrade at any time?</h3>
                             </div>
                             <div class="extraSpace"></div>
                             <div><i class="arrow"></i></div>
                         </div>
                         <div class="gridBox8">
                             <div>
-                                <h3>Do I have to sign a long-term contract?</h3>
+                                <h3 id="highlight">Do I have to sign a long-term contract?</h3>
                             </div>
                             <div class="extraSpace"></div>
                             <div><i class="arrow" style="margin-top: 35px;"></i></div>
                         </div>
                         <div class="gridBox8">
                             <div>
-                                <h3>How many times can I run payroll per month?</h3>
+                                <h3 id="highlight">How many times can I run payroll per month?</h3>
                             </div>
                             <div class="extraSpace"></div>
                             <div><i class="arrow"></i></div>
                         </div>
                         <div class="gridBox8">
                             <div>
-                                <h3>How much does Health Insurance administration through Gusto cost?</h3>
+                                <h3 id="highlight">How much does Health Insurance administration through Gusto cost?</h3>
                             </div>
                             <div class="extraSpace"></div>
                             <div><i class="arrow"></i></div>
                         </div>
                         <div class="gridBox8">
                             <div>
-                                <h3>What if my number of employees changes throughout the year?</h3>
+                                <h3 id="highlight">What if my number of employees changes throughout the year?</h3>
                             </div>
                             <div class="extraSpace"></div>
                             <div><i class="arrow"></i></div>
                         </div>
                         <div class="gridBox8">
                             <div>
-                                <h3>How do you bill for contractors?</h3>
+                                <h3 id="highlight">How do you bill for contractors?</h3>
                             </div>
                             <div class="extraSpace"></div>
                             <div><i class="arrow" style="margin-top: 35px;"></i></div>
                         </div>
                         <div class="gridBox8">
                             <div>
-                                <h3>How do I sign up for Gusto?</h3>
+                                <h3 id="highlight">How do I sign up for Gusto?</h3>
                             </div>
                             <div class="extraSpace"></div>
                             <div><i class="arrow" style="margin-top: 35px;"></i></div>
                         </div>
                         <div class="gridBox8">
                             <div>
-                                <h3>What tax forms will Gusto file for me?</h3>
+                                <h3 id="highlight">What tax forms will Gusto file for me?</h3>
                             </div>
                             <div class="extraSpace"></div>
                             <div><i class="arrow" style="margin-top: 35px;"></i></div>
                         </div>
                         <div class="gridBox8">
                             <div>
-                                <h3>Does Gusto integrate with other software?</h3>
+                                <h3 id="highlight">Does Gusto integrate with other software?</h3>
                             </div>
                             <div class="extraSpace"></div>
                             <div><i class="arrow"></i></div>
                         </div>
                         <div class="gridBox8">
                             <div>
-                                <h3>Is it easy to switch?</h3>
+                                <h3 id="highlight">Is it easy to switch?</h3>
                             </div>
                             <div class="extraSpace"></div>
                             <div><i class="arrow" style="margin-top: 35px;"></i></div>
                         </div>
                         <div class="gridBox8">
                             <div>
-                                <h3>I need more answers. Who can I contact?</h3>
+                                <h3 id="highlight">I need more answers. Who can I contact?</h3>
                             </div>
                             <div class="extraSpace"></div>
                             <div><i class="arrow" style="margin-top: 35px;"></i></div>
                         </div>
                         <div class="gridBox8">
                             <div>
-                                <h3>Where can I find Gusto pricing for accountants?</h3>
+                                <h3 id="highlight">Where can I find Gusto pricing for accountants?</h3>
                             </div>
                             <div class="extraSpace"></div>
                             <div><i class="arrow"></i></div>
@@ -1173,5 +1244,117 @@
                 </div>
             </div>
         </div>
+        <footer>
+            <div class="f-cont">
+                <div id="sec1">
+                    <div>
+                        <p class="f-title">Built for you</p>
+                        <p class="blue-text">Gusto for new business</p>
+                        <p class="grey-text">Set your new business up with modern payroll, benefits, and HR</p>
+                    </div>
+                    <div>
+                        <p class="blue-text">Switching to Gusto</p>
+                        <p class="grey-text">Transfer your payroll, benefits, and HR from another provider</p>
+                    </div>
+                    <div>
+                        <p class="blue-text">For accountants</p>
+                        <p class="grey-text">A reward program for accounts and bookkeepers</p>
+                    </div>
+                    <div>
+                        <p class="blue-text">Pricing</p>
+                        <p class="grey-text">Starting at just $45 per month</p>
+                    </div>
+                </div>
+                <div id="sec2">
+                    <p class="f-title">All-in-one platform</p>
+                    <p class="subtitle">Payroll</p>
+                    <p class="subtitle">Employee benefits</p>
+                    <p class="subtitle">Health insurance</p>
+                    <p class="subtitle">Financial benefits</p>
+                    <p class="subtitle">Hiring and onboarding</p>
+                    <p class="subtitle">Expert HR</p>
+                    <p class="subtitle">Time tracking tools</p>
+                    <p class="subtitle">Worker's comp</p>
+                    <p class="subtitle">Integrations</p>
+                    <p class="subtitle">Gusto Wallet</p>
+                    <p class="subtitle">Gusto Partner Offers</p>
+                </div>
+                <div id="sec3">
+                    <p class="f-title">Tools</p>
+                    <p class="subtitle">Small Business Financial Relief</p>
+                    <p class="subtitle">Employer Tax calculator</p>
+                    <p class="subtitle">Burn rate calculator</p>
+                    <p class="subtitle">Salary comparison tool</p>
+                    <p class="subtitle">New hire checklist</p>
+                    <p class="subtitle">Small business guides</p>
+                </div>
+                <div id="sec4">
+                    <p class="f-title">About Gusto</p>
+                    <p class="subtitle">About</p>
+                    <p class="subtitle">Careers - <a class="blue-text">We're hiring!</a></p>
+                    <p class="subtitle">Press</p>
+                    <p class="subtitle">Contact</p>
+                    <p class="subtitle">Investors</p>
+                    <p class="subtitle">Affiliate program</p>
+                </div>
+                <div id="sec5">
+                    <p class="f-title">For Accountants</p>
+                    <p class="subtitle">Become a partner</p>
+                    <p class="subtitle">People Advisory</p>
+                    <p class="subtitle">Certification</p>
+                    <p class="subtitle">Gusto Pro</p>
+                    <p class="subtitle">Gusto partner blog</p>
+                </div>
+                <div id="sec6">
+                    <p class="f-title">For Developers</p>
+                    <p class="subtitle">Gusto Embedded Payroll</p>
+                    <p class="subtitle">Build with Gusto</p>
+                    <p class="subtitle">Developer resources</p>
+                </div>
+                <div id="sec7">
+                    <p class="f-title">Resources</p>
+                    <p class="subtitle">Interactive demo</p>
+                    <p class="subtitle">Compare</p>
+                    <p class="subtitle">Find an accountant</p>
+                    <p class="subtitle">Help Center</p>
+                    <p class="subtitle">FAQs</p>
+                    <p class="subtitle">Customer Stories</p>
+                </div>
+                <div id="sec8">
+                    <p class="f-title">Contact us</p>
+                    <p class="subtitle">Talk to sales - <a class="blue-text">(866) 312-1520</a></p>
+                    <p class="subtitle">Talk to support - <a class="blue-text">Sign</a></p>
+                    <p class="f-title">Licenses</p>
+                    <p class="subtitle">Gusto Capital, LLC NMLS ID: <a class="blue-text">1845463</a></p>
+                    <p class="subtitle">ZenPayroll, Inc. NMLS ID: <a class="blue-text">1737896</a></p>
+                </div>
+            </div>
+            <div id="talk-shop">
+                <p class="f-title">Talk Shop: <a class="blue-text">Small business resources</a></p>
+                <div class="subtitle border"></div>
+            </div>
+            <div class="f-cont">
+                <div id="sec9">
+                    <p class="blue-text">Talk Shop blog</p>
+                    <p class="grey-text">Advice and information for small business and their teams</p>
+                </div>
+                <div id="sec10">
+                    <p class="subtitle">Running payroll</p>
+                    <p class="subtitle">Employee benefits</p>
+                    <p class="subtitle">Health insurance</p>
+                    <p class="subtitle">Prople management</p>
+                </div>
+                <div id="sec11">
+                    <p class="subtitle">Workers' comp</p>
+                    <p class="subtitle">Starting a business</p>
+                    <p class="subtitle">Business finances</p>
+                </div>
+                <div id="sec12">
+                    <p class="subtitle">Hiring</p>
+                    <p class="subtitle">Growth</p>
+                    <p class="subtitle">Taxes</p>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
