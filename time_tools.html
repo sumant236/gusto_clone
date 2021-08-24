@@ -5,8 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Time_tools</title>
     <style>
+        h1{
+            font-family: 'Philosopher', sans-serif !important;
+        }
+        p{
+            font-family: 'Roboto', sans-serif !important;
+        }
+        @media screen and (max-width:992px) {
+            h1 {
+                font-size: 40px !important;
+                line-height: 45px !important;
+            }
+
+            p {
+                font-size: 18px !important;
+            }
+
+        }
+
+        @media screen and (max-width:768px) and (min-width:600px) {
+            h1 {
+                font-size: 30px !important;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .infoBox {
+                width: 96% !important;
+                margin: auto !important;
+            }
+
+            img {
+                width: 95% !important;
+                margin: auto !important;
+                padding: 0px !important;
+            }
+
+            h1 {
+                font-size: 27px !important;
+            }
+        }
+
         body {
             margin: 0px;
         }
@@ -50,6 +94,7 @@
         }
 
         .bold {
+            font-size: 20px !important;
             font-weight: bold;
             margin-bottom: 0%;
         }
@@ -88,6 +133,56 @@
 
         .padding-right-40 {
             padding-right: 40px;
+        }
+
+        @media only screen and (max-width: 992px) {
+            #box1 {
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: auto;
+            }
+
+            #box1>.infoBox {
+                margin: auto;
+                padding: 0%;
+                text-align: center;
+            }
+
+            #box1>.infoBox+div {
+                display: none;
+            }
+
+            #box1>.infoBox>h1 {
+                font-size: 42px !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 768px) {
+            #box1 {
+                width: 80%;
+                text-align: center;
+                margin-bottom: -60px;
+            }
+
+            #box1>.infoBox>h1 {
+                font-size: 40px !important;
+                line-height: 50px !important;
+            }
+
+            #box1 h1+p {
+                font-size: 20px !important;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            #box1 {
+                width: 95%;
+            }
+
+            #box1>.infoBox>h1 {
+                font-size: 35px !important;
+            }
         }
 
         .slideshow-container {
@@ -143,12 +238,125 @@
             background-color: #717171;
         }
 
-        h2+p {
+        .bold+p {
             margin: 0%;
         }
 
         .E-margin {
             margin: 20px 0px;
+        }
+
+        @media only screen and (max-width: 992px) and (min-width:769px) {
+            #box2 img {
+                width: 80%;
+            }
+
+            #box2 .mySlides {
+                margin-top: 170px;
+                text-align: center;
+            }
+
+            #box2 .next,
+            #box2 .prev {
+                top: 140%;
+            }
+
+            #box2 .prev {
+                left: 3%;
+            }
+
+            #box2 .next {
+                left: 54%;
+            }
+
+            #box2 .infoBox {
+                padding-left: 10%;
+            }
+
+            #box2 h1 {
+                font-size: 40px;
+                line-height: 45px;
+            }
+        }
+
+        @media only screen and (max-width:768px) {
+            #box2 {
+                margin-top: 0px;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            #box2>div>.slideshow-container {
+                margin-bottom: 0px;
+            }
+
+            #box2 img {
+                max-width: 65%;
+            }
+
+            #box2>div>br+div {
+                margin-left: 0% !important;
+            }
+
+
+            #box2 .next,
+            #box2 .prev {
+                top: 97%;
+            }
+
+            #box2 .prev {
+                left: 10%;
+            }
+
+            #box2 .next {
+                left: 80%;
+            }
+
+            #box2 h1 {
+                font-size: 30px !important;
+            }
+
+            #box2>.infoBox {
+                width: 75%;
+                margin: auto;
+            }
+
+            #box2 p {
+                font-size: 20px !important;
+            }
+        }
+
+        @media only screen and (max-width:600px) {
+
+            #box2 .next,
+            #box2 .prev {
+                top: 92%;
+            }
+        }
+
+        @media only screen and (max-width:540px) {
+
+            #box2 .next,
+            #box2 .prev {
+                top: 75%;
+            }
+        }
+
+        @media only screen and (max-width:414px) {
+
+            #box2 .next,
+            #box2 .prev {
+                top: 79%;
+            }
+        }
+
+        @media only screen and (max-width:376px) {
+
+            #box2 .next,
+            #box2 .prev {
+                top: 72%;
+            }
         }
 
         .box3 {
@@ -157,8 +365,50 @@
             grid-template-rows: auto;
         }
 
+        @media only screen and (max-width: 768px) {
+            .box3 {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                background-color: #f8f5f2;
+                float: none !important;
+                width: 70%;
+                margin: auto;
+            }
+
+            .box3>div {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .box3>.infoBox+div {
+                padding: 0px !important;
+                margin: 0px !important;
+            }
+
+            .box3+#back-fit {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            #box3 {
+                float: left !important;
+                background: #f8f5f2;
+                text-align: center;
+                width: 100%;
+                margin: 0px;
+                padding: 30px 0px;
+            }
+
+            #box3>.img-box3 {
+                margin: auto;
+                max-width: 50% !important;
+            }
+        }
+
         #back-fit {
-            background-color: rgb(247, 245, 245);
+            background-color: #f8f5f2;
             height: 200px;
             margin-top: 219px;
             margin-left: auto;
@@ -170,8 +420,8 @@
         }
 
         .white-btn {
-            background-color: rgb(247, 245, 245);
-            border: 1px solid rgb(247, 245, 245);
+            background-color: #f8f5f2;
+            border: 1px solid #f8f5f2;
             cursor: pointer;
             font-size: 15px;
             font-weight: bold;
@@ -187,15 +437,113 @@
         }
 
         #back-fit1 {
-            background-color: rgb(247, 245, 245);
+            background-color: #f8f5f2;
             height: 444px;
             margin-top: 320px;
             margin-left: auto;
             margin-right: auto;
         }
 
+        @media only screen and (max-width: 992px) {
+            #box4 img {
+                margin-top: 80px;
+                width: 90%;
+                padding-left: 50px;
+            }
+        }
+
+        @media only screen and (max-width:768px) {
+            #box4 {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            #box4 .infoBox {
+                margin: auto;
+            }
+
+            #box4 img {
+                margin: 0px;
+                width: 80%;
+                padding: 0px;
+            }
+        }
+
+        @media only screen and (max-width: 992px) {
+            #box5 img {
+                margin-top: 80px;
+                width: 90%;
+                padding-left: 50px;
+            }
+        }
+
+        @media only screen and (max-width:768px) {
+            #box5 {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            #box5 .infoBox {
+                margin: auto;
+            }
+
+            #box5 img {
+                margin: 0px;
+                width: 80%;
+                padding: 0px;
+            }
+        }
+
         .box6 {
             margin-left: 3%;
+        }
+
+        @media only screen and (max-width: 992px) {
+            #box6 img {
+                margin-top: 140px;
+                padding-right: 50px;
+            }
+        }
+
+        @media only screen and (max-width:768px) {
+            #box6 {
+                display: flex;
+                flex-direction: column-reverse;
+                text-align: center;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            #box6 .infoBox {
+                margin: auto;
+            }
+
+            #box6 img {
+                margin: auto;
+                width: 100%;
+                padding: 0px;
+            }
+
+            #box6>.img-box6 {
+                margin: auto;
+            }
+
+            #back-fit1 {
+                margin-top: 0%;
+                height: 900px;
+            }
+        }
+
+        @media only screen and (max-width:600px) {
+            #back-fit1 {
+                height: 700px !important;
+            }
         }
 
         .box6>.img-box6 {
@@ -223,11 +571,83 @@
         }
 
         #back-fit2 {
-            background-color: rgb(247, 245, 245);
+            background-color: #f8f5f2;
             height: 594px;
+            width: 100%;
             margin-top: 189px;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        @media screen and (max-width: 992px) {
+            #box7 img {
+                margin-top: 140px;
+                width: 90%;
+                padding-left: 50px;
+            }
+        }
+
+        @media only screen and (max-width:768px) {
+            #box7 {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            #box7 .infoBox {
+                width: 80%;
+                margin: auto;
+            }
+
+            #box7 img {
+                margin: auto;
+                width: 80%;
+                padding: 0px;
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            #box8 img {
+                margin-top: 140px;
+            }
+        }
+
+        @media only screen and (max-width:768px) {
+            #box8 {
+                display: flex;
+                flex-direction: column-reverse;
+                text-align: center;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            #box8 .infoBox {
+                width: 80%;
+                margin: auto;
+                padding: 0px;
+            }
+
+            #box8 img {
+                margin: auto;
+                width: 80%;
+                padding: 0px;
+            }
+
+            #back-fit2 {
+                background-color: #f8f5f2;
+                height: 750px;
+                width: 100%;
+                margin-top: 0px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #box8>.margin-top-50 {
+                margin-top: 0px;
+                padding: 0px;
+            }
         }
 
         .width-60 {
@@ -239,6 +659,50 @@
             display: grid;
             grid-template-columns: 40% 60%;
             grid-template-rows: auto;
+        }
+
+        @media screen and (max-width: 992px) {
+            #box9 {
+                margin-top: 40px;
+                display: flex;
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            #box9 p {
+                font-size: 20px !important;
+            }
+
+            #box9 .bold {
+                line-height: 35px;
+            }
+
+            #box9>.infoBox {
+                margin-top: 0px;
+                text-align: center;
+                padding: 0%;
+            }
+
+            #box9 img {
+                width: 85%;
+                float: right;
+                padding: 0px;
+                margin-bottom: -20px;
+            }
+        }
+
+        @media only screen and (max-width:768px) {
+            #box9 img {
+                padding: 0px;
+                margin: 0px;
+                width: 80%;
+                margin: auto;
+            }
+
+            #box9>.infoBox {
+                width: 80%;
+                margin: auto;
+            }
         }
 
         .padding-right-80 {
@@ -268,9 +732,21 @@
         /* The CSS for box11 starts from here. */
         #box11 {
 
-            width: 40%;
+            width: 50%;
             margin: 200px auto;
             text-align: center;
+        }
+
+        @media screen and (max-width: 992px) {
+            #box11 {
+                width: 59%;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            #box11 {
+                width: 70%;
+            }
         }
 
         #box11>p {
@@ -297,9 +773,9 @@
 </head>
 
 <body>
-    <div class="box grid">
+    <div class="box grid" id="box1">
         <div class="infoBox margin-top-50 padding-right-40">
-            <h1>The time tools you need,<br />all combined with payroll.</h1>
+            <h1>The time tools you need,all combined with payroll.</h1>
             <p>When you use Gusto, your team’s hours, time off, and holidays are easily calculated into payroll.</p>
             <button id="get-started-btn">
                 <p>Get started</p>
@@ -312,99 +788,99 @@
             </div>
         </div>
     </div>
-    <div class="box slideBox">
+    <div class="box slideBox" id="box2">
         <div style="margin-top: 130px">
             <div class="slideShow-container">
                 <a class=" prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <a class=" next" onclick="plusSlides(1)">&#10095;</a>
                 <div class="mySlides">
                     <img src="https://prod.gusto-assets.com/assets/product/time_tools/time-tracking-1-8fd77a38acec05e05b980683799e397f2112edf65f817c2cd3fde3932da21cca.png.webp"
-                        class="img-dim"">
-                  </div>
-                
-                  <div class=" mySlides">
+                        class="img-dim">
+                </div>
+
+                <div class=" mySlides">
                     <img src="https://prod.gusto-assets.com/assets/product/time_tools/time-tracking-2-1597957d9d5d7fa8fab926616b4b0c6c13f946c8c6c26f5604d81c85bf2dd9ff.png.webp"
-                        class="img-dim"">
-                  </div>
-                
-                  <div class=" mySlides">
+                        class="img-dim">
+                </div>
+
+                <div class=" mySlides">
                     <img src="https://prod.gusto-assets.com/assets/product/time_tools/time-tracking-3-1cc995c3a10d745cc7a47099ac2132234ebcca69cbd139eeef31fe78e7d78eef.png.webp"
-                        class="img-dim"">
-                  </div>
+                        class="img-dim">
+                </div>
 
-                </div>
-                <br />
-                <div style=" margin-left: 40%;">
-                    <span class="dot" onclick="currentSlide(0)"></span>
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                </div>
             </div>
-            <div class="infoBox">
-                <p class="c-red">Time and project tracking</p>
-                <h1>Track hourly work and workforce costs the easy way.</h1>
-                <div class="E-margin">
-                    <h2 class="bold">Time tracking for payroll</h2>
-                    <p>Employees and contractors track hours in their Gusto accounts or mobile app. You review and
-                        approve.</p>
-                </div>
-                <div class="E-margin">
-                    <h2 class="bold">Project tracking and workforce costing</h2>
-                    <p>Understand project costs and team efficiency with detailed breakdowns by project, task, employee,
-                        and time period.</p>
-                </div>
-                <div class="E-margin">
-                    <h2 class="bold">Accounting integrations</h2>
-                    <p>Sync hours and costs right with Quickbooks Online or Xero for easier job costing with no extra
-                        work.</p>
-                </div>
-                <div style="display: inline block;">
-                    <p>Want to see if time and project tracking are right for your business? <a style="color: grey;"
-                            href="https://not found">Schedule a call</a></p>
+            <br />
+            <div style=" margin-left: 40%;">
+                <span class="dot" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
+        <div class="infoBox">
+            <p class="c-red">Time and project tracking</p>
+            <h1>Track hourly work and workforce costs the easy way.</h1>
+            <div class="E-margin">
+                <p class="bold">Time tracking for payroll</p>
+                <p>Employees and contractors track hours in their Gusto accounts or mobile app. You review and
+                    approve.</p>
+            </div>
+            <div class="E-margin">
+                <p class="bold">Project tracking and workforce costing</p>
+                <p>Understand project costs and team efficiency with detailed breakdowns by project, task, employee,
+                    and time period.</p>
+            </div>
+            <div class="E-margin">
+                <p class="bold">Accounting integrations</p>
+                <p>Sync hours and costs right with Quickbooks Online or Xero for easier job costing with no extra
+                    work.</p>
+            </div>
+            <div style="display: inline block;">
+                <p>Want to see if time and project tracking are right for your business? <a style="color: grey;"
+                        href="https://not found">Schedule a call</a></p>
 
-                </div>
-            </div>
-        </div>
-        <div class="box3 box float">
-            <div><img
-                    src="https://prod.gusto-assets.com/assets/product/time_tools/content-preview-146817b0d560a64fa6c5f2170ffe62c2e5b488eb56e4d42234b99f025fdbcb93.png.webp"
-                    class="img-dim" />
-            </div>
-            <div class="infoBox">
-                <p><strong>Is simple time tracking right for you?</strong> Take a closer look at our time tracking tool
-                    and how it works.</p>
-            </div>
-            <div><button class="white-btn">View PDF</button></div>
-        </div>
-        <div id="back-fit"></div>
-        <div class="box grid">
-            <div class="infoBox" style="width: 85%;">
-                <p class="c-red">PTO policies and reporting</p>
-                <h1>Paid time off as unique as your team.</h1>
-                <p>Customize your paid-time-off policies to fit your team’s needs, then run reports with a click of a
-                    button. It’s all organized by date, department, or employee so it’s easy to navigate.</p>
-                <p>And remember, automatically calculated PTO liabilities means your accounting stays headache-free.</p>
-            </div>
-            <div>
-                <img src="https://prod.gusto-assets.com/assets/product/time_tools/product-time-tools-vacation-time-fd275a127c77968866fe4727f908d64de390f42832de898375ac80063dc7d5fb.jpg.webp"
-                    class="img-dim" />
-            </div>
-        </div>
-        <div class="box grid">
-            <div class="infoBox" style="width: 90%;">
-                <p class="c-red">Time off tracker</p>
-                <h1>View time off changes at a glance.</h1>
-                <p>Your answer to, “how did my time off balance get this way?” Chronologically track and understand
-                    adjustments to employee time off.</p>
-                <p>Plus, your team can easily view their own PTO changes right from their Gusto accounts</p>
-            </div>
-            <div>
-                <img src="https://prod.gusto-assets.com/assets/product/time_tools/product-time-tools-ee-467b882a76aeec9618f303743077661e7bac7af3214011b84e9496f520ffc9d4.jpg.webp"
-                    class="img-dim" />
             </div>
         </div>
     </div>
-    <div class="box grid box6 float">
+    <div class="box3 box float" id="box3">
+        <div class="img-box3"><img
+                src="https://prod.gusto-assets.com/assets/product/time_tools/content-preview-146817b0d560a64fa6c5f2170ffe62c2e5b488eb56e4d42234b99f025fdbcb93.png.webp"
+                class="img-dim" />
+        </div>
+        <div class="infoBox">
+            <p><strong>Is simple time tracking right for you?</strong> Take a closer look at our time tracking tool
+                and how it works.</p>
+        </div>
+        <div><button class="white-btn">View PDF</button></div>
+    </div>
+    <div id="back-fit"></div>
+    <div class="box grid" id="box4">
+        <div class="infoBox" style="width: 85%;">
+            <p class="c-red">PTO policies and reporting</p>
+            <h1>Paid time off as unique as your team.</h1>
+            <p>Customize your paid-time-off policies to fit your team’s needs, then run reports with a click of a
+                button. It’s all organized by date, department, or employee so it’s easy to navigate.</p>
+            <p>And remember, automatically calculated PTO liabilities means your accounting stays headache-free.</p>
+        </div>
+        <div>
+            <img src="https://prod.gusto-assets.com/assets/product/time_tools/product-time-tools-vacation-time-fd275a127c77968866fe4727f908d64de390f42832de898375ac80063dc7d5fb.jpg.webp"
+                class="img-dim" />
+        </div>
+    </div>
+    <div class="box grid" id="box5">
+        <div class="infoBox" style="width: 90%;">
+            <p class="c-red">Time off tracker</p>
+            <h1>View time off changes at a glance.</h1>
+            <p>Your answer to, “how did my time off balance get this way?” Chronologically track and understand
+                adjustments to employee time off.</p>
+            <p>Plus, your team can easily view their own PTO changes right from their Gusto accounts</p>
+        </div>
+        <div>
+            <img src="https://prod.gusto-assets.com/assets/product/time_tools/product-time-tools-ee-467b882a76aeec9618f303743077661e7bac7af3214011b84e9496f520ffc9d4.jpg.webp"
+                class="img-dim" />
+        </div>
+    </div>
+    </div>
+    <div class="box grid box6 float" id="box6">
         <div class="img-box6">
             <img
                 src="https://prod.gusto-assets.com/assets/product/time_tools/product-time-tools-requests-a1b7531b2038d3d87a893fa48d8520f4752c5384e3170f72c9c40af6763d553b.png.webp" />
@@ -417,7 +893,7 @@
         </div>
     </div>
     <div id="back-fit1"></div>
-    <div class="box grid">
+    <div class="box grid" id="box7">
         <div class="infoBox margin-top-80" style="width: 85%;">
             <p class="c-red">Holiday pay</p>
             <h1>Pick your holidays and pay your team.</h1>
@@ -429,7 +905,7 @@
                 class="img-dim" />
         </div>
     </div>
-    <div class="box grid float">
+    <div class="box grid float" id="box8">
         <div class="margin-top-50">
             <img src="https://prod.gusto-assets.com/assets/product/time_tools/product-time-tools-calendar-a61af3c8ed3d27c6436b1bc2d64ae809bd3f2d7dde4019c2fd48f89526d2ff6d.png.webp"
                 class="img-dim" />
@@ -443,12 +919,12 @@
             <p>We support Google, Outlook, and iCal.</p>
         </div>
     </div>
-    <div id="back-fit2 "></div>
+    <div id="back-fit2"></div>
     <div class="infoBox t-center width-60">
         <p class="c-red">Okay, let’s review</p>
         <h1 class="margin-bottom-0">The best time tools? The ones that sync with payroll.</h1>
     </div>
-    <div class="box-with-top-margin-0 box9">
+    <div class="box-with-top-margin-0 box9" id="box9">
         <div class="infoBox padding-left-120 padding-right-80 margin-top-50">
             <div>
                 <p class="bold ">Track everything in one place.</p>
@@ -493,7 +969,7 @@
             var slides = document.getElementsByClassName('mySlides');
             var dots = document.getElementsByClassName('dot');
             if (slideIndex > slides.length - 1) {
-                slideIndex = 1;
+                slideIndex = 0;
             }
             if (slideIndex < 0) {
                 slideIndex = slides.length - 1;

@@ -5,9 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Time Tools</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Need a new Provider</title>
 </head>
 <style>
+    h1 {
+        font-family: 'Philosopher', sans-serif !important;
+    }
+
+    p {
+        font-family: 'Roboto', sans-serif !important;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
 
     #box1 {
         display: grid;
@@ -44,9 +59,77 @@
         height: 100%;
     }
 
+    .btn1 {
+        background-color: #f45d48;
+        font-size: 94%;
+        color: white;
+        border: 1px solid #f45d48;
+    }
+
+    .btn2 {
+        font-weight: 600;
+        background-color: rgb(248, 239, 248);
+        margin: 0px 3%;
+        border: 1px solid rgb(248, 239, 248);
+    }
+
+    @media only screen and (max-width: 992px) {
+        #box1 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .imgBox1 {
+            width: 95%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .box1+div {
+            text-align: center;
+        }
+
+        .box1 {
+            margin: 0px 42px;
+            padding-bottom: 35px;
+        }
+
+        #buttonBox>button {
+            border-radius: 6px;
+            width: 22%;
+            height: 52px;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        #buttonBox>button {
+            border-radius: 6px;
+            width: 98%;
+            height: 52px;
+        }
+
+        .btn1 {
+            margin-bottom: 15px;
+        }
+
+        .btn2 {
+            margin-left: 0px;
+        }
+
+        .heading {
+            font-size: 258%;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        .box1 {
+            margin: 0px 12px;
+        }
+    }
+
     /* CSS of Box2 starts from here */
     #box2 {
-        background-color: rgb(253, 250, 250);
+        background-color: #f8f5f2;
         padding-top: 150px;
         display: grid;
         grid-template-columns: 50% 50%;
@@ -70,15 +153,90 @@
     }
 
     #infoBox2>div {
+        display: grid;
+        grid-template-columns: 15% 85%;
+        grid-template-rows: auto;
         margin-top: 8% !important;
-        display: flex;
-        height: 13%;
-        margin: 0% 4%;
+        background-color: white;
+        border: 1px solid rgb(161, 197, 197);
+        padding: 9px;
+        border-radius: 6px;
+
+    }
+
+    #infoBox2>div>div>img {
+        width: 100%;
     }
 
     #infoBox2>h1 {
         font-size: 288%;
         font-weight: 600;
+    }
+
+    @media only screen and (max-width: 992px) {
+        #infoBox2>h1 {
+            font-size: 226%;
+            font-weight: 600;
+            line-height: 45px;
+        }
+
+        .imgBox2 {
+            width: 95%;
+            margin: 29% 0% 0% 0%;
+        }
+
+        #infoBox2 {
+            margin-right: 6%;
+            margin-left: 10%;
+        }
+
+        #infoBox2>div {
+            grid-template-columns: 27% 85%;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        #infoBox2>div {
+            grid-template-columns: 35% 65%;
+        }
+
+        #infoBox2>h1 {
+            font-size: 199%;
+            line-height: 39px;
+        }
+
+        .imgBox2 {
+            margin: 47% 0% 0% 0%;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        #box2 {
+            width: 84%;
+            padding: 0% 8%;
+            margin: auto;
+            padding-top: 150px;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto;
+        }
+
+        #infoBox2>h1 {
+            line-height: 37px;
+        }
+
+        #infoBox2>div {
+            grid-template-columns: 25% 75%;
+        }
+
+        .imgBox2 {
+            width: 100%;
+            margin: 2% auto;
+        }
+
+        #infoBox2 {
+            margin-right: 0%;
+            margin-left: 0%;
+        }
     }
 
     /* CSS of box3 starts from here */
@@ -99,6 +257,38 @@
         font-size: 130%;
         font-weight: bold;
         line-height: 125%;
+    }
+
+    @media only screen and (max-width: 992px) {
+        .boxOfBox3 p {
+            font-size: 115%;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        #box3 {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            grid-gap: 4%;
+            width: 92%;
+        }
+
+        .boxOfBox3 {
+            width: 80%;
+            margin: auto;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        #box3 {
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto auto;
+        }
+
+        .boxOfBox3 p {
+            font-size: 126%;
+        }
     }
 
     /* CSS of box4 Starts from here. */
@@ -160,12 +350,45 @@
         margin-right: 6%;
     }
 
+    @media only screen and (max-width: 992px) {
+        #box4 {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            grid-gap: 2%;
+        }
+
+        .box1ofBox4>button {
+            margin: 3% 0%;
+            padding: 0%;
+        }
+
+        .boxOfBox4 {
+            height: 420px;
+        }
+    }
+
+    @media only screen and (max-width:768px) {
+        #box4 {
+            grid-template-columns: 70%;
+            grid-template-rows: auto auto auto auto;
+            margin: 0px 15%;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        #box4 {
+            grid-template-columns: auto;
+            margin: auto;
+        }
+    }
+
     /* The CSS of box5 starts from here */
     #box5 {
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: auto;
-        background-color: rgb(247, 240, 240);
+        background-color: #f8f5f2;
         padding: 150px 0px;
     }
 
@@ -220,6 +443,74 @@
         border-radius: 4px;
     }
 
+    @media only screen and (max-width: 992px) {
+        #box5>div>img {
+            margin-left: 12%;
+            width: 87%;
+        }
+
+        .infoBox5 {
+            margin: 0px 5% 0px 9%;
+        }
+
+        .infoBox5>h1 {
+            font-size: 30px;
+        }
+
+        .infoBox5>button {
+            height: 10%;
+        }
+    }
+
+    @media only screen and (max-width:768px) {
+        #box5 {
+            padding: 100px 0px;
+            margin-top: 150px;
+        }
+
+        .infoBox5>div {
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto auto auto auto;
+            grid-gap: 7%;
+            margin-top: 22px;
+        }
+
+        .infoBox5>button {
+            width: 56%;
+        }
+
+        #box5>div>img {
+            margin-top: 150px;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        #box5 {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto;
+            background-color: #f8f5f2;
+            padding: 150px 0px;
+        }
+
+        #box5>.ab {
+            text-align: center;
+        }
+
+        #box5>div>img {
+            width: 84%;
+            margin: auto;
+        }
+
+        .infoBox5 {
+            margin: 0px 0% 0px 8%;
+        }
+
+        .infoBox5>button {
+            width: 42%;
+        }
+    }
+
     /* The CSS for box6 starts from here */
     #box6 {
         margin-top: 100px;
@@ -248,8 +539,8 @@
     .infoBox6>button {
         height: 10%;
         width: 38%;
-        background-color: red;
-        border: 1px solid red;
+        background-color: #f45d48;
+        border: 1px solid #f45d48;
         font-size: 15px;
         font-weight: bold;
         border-radius: 4px;
@@ -262,17 +553,94 @@
 
     .infoBox6>div {
         display: flex;
-        background-color: rgb(247, 240, 240);
+        background-color: #f8f5f2;
         margin-top: 40px;
         height: 12%;
         padding: 4%;
+        border-radius: 6px;
     }
 
     .infoBox6>div>p {
         margin-top: 0px;
         margin-left: 5%;
-        font-size: 18px;
+        font-size: 17px;
         margin-right: 31px
+    }
+
+    @media only screen and (max-width: 992px) {
+        .imgBox6>img {
+            width: 90%;
+            margin-left: 3%;
+            margin-top: 23%;
+        }
+
+        .infoBox6 {
+            margin-left: 10%;
+        }
+
+        .infoBox6>h1 {
+            font-size: 31px;
+            line-height: 42px;
+        }
+
+        .infoBox6>div>p {
+            margin-left: 5%;
+            font-size: 17px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+        }
+
+        .infoBox6>button {
+            height: 9%;
+            width: 39%;
+        }
+
+        .infoBox6>div {
+            height: 14%;
+        }
+    }
+
+    @media only screen and (max-width:768px) {
+        #box6 {
+            grid-template-columns: 60% 40%;
+        }
+
+        .imgBox6>img {
+            margin-top: 55%;
+        }
+
+        .infoBox6>div>p {
+            font-size: 15px;
+        }
+
+        .infoBox6 {
+            margin-right: 0%;
+        }
+
+        .infoBox6 {
+            margin-left: 8%;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        #box6 {
+            grid-template-columns: auto;
+            grid-template-rows: auto auto;
+        }
+
+        .infoBox6 {
+            margin: 4%;
+        }
+
+        .imgBox6>img {
+            width: 90%;
+            margin-left: 0%;
+            margin-top: 0px;
+        }
+
+        .imgBox6 {
+            text-align: center;
+        }
     }
 
     /* The CSS of Box7 starts from here. */
@@ -326,6 +694,69 @@
         margin-top: 112%;
     }
 
+    @media only screen and (max-width: 992px) {
+        #box7 {
+            margin: 200px auto;
+            width: 90%;
+        }
+
+        #box7>h1 {
+            text-align: center;
+            font-size: 26px;
+            line-height: 45px;
+        }
+    }
+
+    @media only screen and (max-width:768px) {
+        #box7>h1 {
+            line-height: 33px;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        #box7 {
+            width: 85%;
+        }
+
+        #box7>h1 {
+            font-size: 22px;
+            line-height: 33px;
+        }
+
+        .divOfBox7>p {
+            margin-top: 2%;
+            margin-bottom: 0%;
+            border-left: 0px solid rgb(130, 228, 228);
+            border-top: 1px solid rgb(130, 228, 228);
+            padding-left: 0%;
+            padding-top: 8px;
+            margin-left: 0%;
+            padding-right: 0%;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .divOfBox7>img {
+            padding: 0px 0%;
+            width: 59%;
+            margin: auto;
+        }
+
+        .divOfBox7 {
+            width: 91%;
+        }
+
+        .divOfBox7 {
+            display: flex;
+            flex-direction: column;
+            width: 74%;
+            border-top: 0px solid rgb(130, 228, 228);
+            border-bottom: 0px solid rgb(130, 228, 228);
+            margin: auto;
+            text-align: center;
+        }
+    }
+
     /* The CSS of Box8 starts from here. */
     #box8 {
         display: grid;
@@ -356,6 +787,65 @@
         font-size: 45px;
         margin-bottom: 2%;
         margin-left: 5%;
+    }
+
+    @media only screen and (max-width: 992px) {
+        .gridBox8 p {
+            margin-bottom: 8%;
+            margin-left: 6%;
+        }
+
+        #box8 h1 {
+            font-size: 35px;
+            margin-bottom: 0%;
+            margin-left: 4%;
+        }
+
+        #box8 {
+            grid-template-columns: auto;
+        }
+    }
+
+    @media only screen and (max-width:768px) {
+        .gridBox8 p {
+            font-size: 25px;
+        }
+
+        #box8 h1 {
+            font-size: 30px;
+            margin-bottom: 2%;
+        }
+
+        #box8 {
+            width: 88%;
+            margin: auto;
+        }
+
+    }
+
+    @media only screen and (max-width: 600px) {
+        #box8 {
+            width: 100%;
+        }
+
+        #box8 h1 {
+            font-size: 27px;
+            margin-bottom: 0%;
+            margin-left: 5px;
+        }
+
+        .gridBox8 p {
+            font-size: 24px;
+            margin-left: 5px;
+        }
+
+        .arrow {
+            margin-top: 172%;
+        }
+
+        .gridBox8 {
+            grid-template-columns: 91% 3% 5%;
+        }
     }
 
     /* The CSS of box9 starts  here */
@@ -395,7 +885,7 @@
     }
 
     .priceBox9 p {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: bold;
     }
 
@@ -463,9 +953,73 @@
         display: contents;
     }
 
+    @media only screen and (max-width: 992px) {
+        .infoBox9>h1 {
+            font-size: 30px;
+        }
+
+        .infoBox9 {
+            width: 94%;
+        }
+
+        .infoBox9>p {
+            font-size: 18px;
+        }
+
+        .priceBox9 p {
+            font-size: 18px;
+        }
+
+        .buttonOfBox9 {
+            width: 15%;
+        }
+
+        .btn+div>p {
+            width: 90%;
+        }
+
+        .priceBox9 {
+            width: 95%;
+        }
+    }
+
+    @media only screen and (max-width:768px) {
+        #box9 {
+            padding-top: 101px;
+            width: 95%;
+            margin: auto;
+        }
+
+        .buttonOfBox9 {
+            width: 22%;
+        }
+    }
+
+    @media only screen and (max-width:600px) {
+        .infoBox9 {
+            width: 100%;
+        }
+
+        .infoBox9>h1 {
+            font-size: 25px;
+        }
+
+        .dim {
+            height: 100px;
+        }
+
+        .buttonOfBox9 {
+            width: 34%;
+        }
+
+        .btn+div>p {
+            width: 100%;
+        }
+    }
+
     /* The CSS for box10 starts from here */
     #box10 {
-        width: 60%;
+        width: 70%;
         margin: 150px auto;
     }
 
@@ -496,6 +1050,49 @@
         margin: 0px 2%;
     }
 
+    @media only screen and (max-width: 992px) {
+        #box10>h1 {
+            font-size: 40px;
+        }
+
+        #box10 {
+            width: 92%;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        #icons {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
+            grid-gap: 35px;
+        }
+
+        #box10>h1 {
+            font-size: 35px;
+        }
+
+        #box10>p {
+            font-size: 18px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        #box10>h1 {
+            font-size: 30px;
+        }
+
+        #icons {
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto auto;
+            grid-gap: 45px;
+        }
+
+        #box10>p {
+            font-size: 19px;
+        }
+    }
+
     /* The CSS for Box11 starts from here */
     #box11 {
 
@@ -519,10 +1116,30 @@
         border-radius: 6px;
         width: 126px;
         height: 41px;
-        background-color: red;
-        border: 1px solid red;
+        background-color: #f45d48;
+        border: 1px solid #f45d48;
         color: white;
         text-align: center;
+    }
+
+    @media only screen and (max-width: 992px) {
+        #box11 {
+            width: 49%;
+        }
+
+        #box11>h1 {
+            font-size: 36px;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        #box11 {
+            width: 85%;
+        }
+
+        #box11>h1 {
+            font-size: 30px;
+        }
     }
 </style>
 
@@ -532,10 +1149,9 @@
             <p style="color: red; font-size: 105%;">Switching to Gusto</p>
             <h1 class="heading">All your HR needs, all in one place.</h1>
             <div id="buttonBox">
-                <button style="background-color: red; font-size: 94%; color: white; border: 1px solid red;">Schedule a
+                <button class="btn1">Schedule a
                     call</button>
-                <button
-                    style="font-weight: 600; background-color: rgb(248, 239, 248); margin: 0px 3%; border: 1px solid rgb(248, 239, 248);">Get
+                <button class="btn2">Get
                     Started</button>
             </div>
         </div>
@@ -552,10 +1168,14 @@
             <p class="paraSize">With Gusto, you get an expansive HR platform and all-in-one solution for payroll,
                 employee benefits, hiring, onboarding, provisioning, accounting, tax filings, and more. Lots more.</p>
             <div>
-                <img
-                    src="https://prod.gusto-assets.com/wp-content/uploads/switching_makes_sense_callout_profile%402x.png" />
-                <p style="margin: 0% 6%;" class="paraSize">A dedicated team will be there when you have questions or
-                    need support.</p>
+                <div><img
+                        src="https://prod.gusto-assets.com/wp-content/uploads/switching_makes_sense_callout_profile%402x.png" />
+                </div>
+                <div>
+                    <p style="margin: 2% 6%;" class="paraSize">A dedicated team will be there when you have questions or
+                        need support.</p>
+                </div>
+
             </div>
         </div>
         <div>
@@ -610,13 +1230,13 @@
             <p>We’ll help you set up your benefits, payroll deductions, PTO policy, and integrations.</p>
         </div>
         <div class="boxOfBox4">
-            <img src="https://prod.gusto-assets.com/wp-content/uploads/how_it_works_step2%402x.png" />
-            <p>3. We’ll confirm when your setup is complete.</p>
+            <img src="https://prod.gusto-assets.com/wp-content/uploads/how_it_works_step3%402x.png" />
+            <p style="margin-right: 0px;">3. We’ll confirm when your setup is complete.</p>
             <p>Woohoo! Now you can run your payroll in the next cycle and rely on Gusto for your HR needs.</p>
         </div>
     </div>
     <div id="box5">
-        <div>
+        <div class="ab">
             <img src="https://prod.gusto-assets.com/wp-content/uploads/integrations_logos%402x-945x1024.png" />
         </div>
         <div class="infoBox5">
