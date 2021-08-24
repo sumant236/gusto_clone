@@ -1,17 +1,14 @@
-h1, h3, h2, h5{
+h1, h2, h5{
     font-family: 'Playfair Display', serif;
 }
-p, a{
+p, h3, a{
     font-family: 'Prompt', sans-serif;
-}
-body{
-    max-width: 80%;
-    margin: auto;
+    line-height: 24px;
 }
 #intro{
     max-width: 95%;
     text-align: center;
-    padding: 60px 15px 80px 15px;
+    padding: 80px 15px 30px 15px;
 }
 #intro1_1{
     margin: auto;
@@ -24,7 +21,7 @@ body{
 .intro-heading2{
     width: 60%;
     margin: 0px auto 15px auto;
-    font-size: 60px;
+    font-size: 52px;
     font-weight: 500;
 }
 #intro1_1 > p{
@@ -48,7 +45,7 @@ body{
     max-width: 1184px;
     margin: auto;
     text-align: left;
-    padding-bottom: 90px;
+    padding: 0px 15px 90px;
 }
 #image-top > div:nth-child(1){
     margin-right: 14.5%;
@@ -112,7 +109,7 @@ a{
     margin: 10px 0px;
 }
 .p-tag{
-    font-size: 20px;
+    font-size: 15px;
     margin: 10px 0px;
 }
 .offer-letters-video{
@@ -144,7 +141,7 @@ a{
 #few-words > p{
     width: 80%;
     margin: 0px auto 15px auto;
-    font-size: 55px;
+    font-size: 50px;
     font-weight: 500;
 }
 .few-words-div{
@@ -154,7 +151,7 @@ a{
 }
 .few-words-div > img{
     max-width: 17%;
-    height: 43px;
+    height: 40px;
     border: 1px solid gray;
     border-left: none;
 }
@@ -320,7 +317,7 @@ a{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 20%
+    width: 15%
 }
 .box2-tpp > div > img{
     width: 50px;
@@ -351,6 +348,49 @@ a{
 }
 #last-point > div > p{
     margin: 0px 0px 25px 0px;
+}
+.nav-bar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.header{
+    background-color: white;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 6% auto auto auto auto auto auto auto auto auto 6%;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+}
+.logo{
+    padding: 10px;
+    padding-right: 0;
+}
+.logo img{
+    width: 95px;
+}
+.black-text p{
+    font-family: 'Prompt', sans-serif;
+    font-size: 15px;
+    color: black;
+}
+.black-text{
+    padding: 10px;
+    text-align: center;
+    padding-top: 0;
+}
+.black-text p:hover{
+    color: rgb(10, 128, 128);
+}
+.topic{
+    text-decoration: none;
+}
+.sign-in-nav{
+    background-color: rgb(248, 245, 242);
+    border: 0;
+    padding: 0 15px;
+    border-radius: 5px;
 }
 footer{
     width: 90%;
@@ -400,6 +440,15 @@ footer{
     color: black;
 }
 @media screen and (max-width: 1150px){
+    .nav-bar{
+        position: static;
+    }
+    .header{
+        grid-template-columns: auto;
+    }
+    #hid{
+        display: none;
+    }
     #image-top > div:nth-child(1){
         display:none
     }
@@ -412,14 +461,14 @@ footer{
     }
 }
 @media screen and (max-width: 990px) {
-    body{
-        max-width: 100%;
-    }
     .p-tag, .multi-p-tags{
         font-size: 16px;
     }
-    .intro-heading2, #few-words > p{
-        font-size: 42px;
+    #intro{
+        padding: 60px 15px 80px;
+    }
+    .intro-heading2{
+        font-size: 49px;
     }
     .multi-h4-tags{
         font-weight: 600;
@@ -457,13 +506,23 @@ footer{
     .few-words-div > img{
         height: 40px;
     }
+    #few-words > p {
+        width: 100%;
+        font-size: 42px;
+    }
+    #few-words{
+        padding: 60px 15px 80px;
+    }
     .documents-mdiv{
         grid-template-columns: repeat(1, 100%);
         grid-template-areas: 'box3'
                              'box2'
                              'box4';
     padding: 90px 25px 80px 25px;
-    margin: 5%;
+    margin: auto;
+    }
+    #B2{
+        margin-left: 36%;
     }
     #B3{
         max-width: 70%;
@@ -485,15 +544,33 @@ footer{
     }
     .tm-checklist-mdiv{
         flex-direction: column-reverse;
+        padding: 320px 25px 80px;
     }
     .tm-checklist-mdiv > div{
-        width: 100%;
+        max-width: 55%;
         margin: 0px auto;
         padding: 0px 14%;
+        line-height: 24px;
+    }
+    .box2-tm > img{
+        display: none;
+    }
+    li{
+        text-align: left;
+        padding-left: 10px;
+        margin-bottom: 10px;
+    }
+    .box1-tm > p{
+        margin: 0px 0px 30px 0px;
     }
     .blue-box-div{
         flex-direction: column;
         justify-content: center;
+        font-family: 'Prompt', sans-serif;
+    }
+    .blue-box-mdiv > h1{
+        font-size: 42px;
+        margin-bottom: 70px;
     }
     .blue-box-div > div:nth-child(even){
         border: none;
@@ -512,23 +589,59 @@ footer{
     .box2-tpp{
         max-width: 90%;
     }
+    #last-point > div{
+        width: 40%;
+    }
     .cont2{
         display: grid;
         grid-template-columns: repeat(2, 50%);
     }
 }
-@media screen and (max-width: 750px) {
-    .shadowing-images > img{
-        width: 80%;
+@media screen and (max-width: 768px) {
+    #intro{
+        padding: 30px 15px 40px;
         margin: auto;
-        padding: 0px 0px 50px 0px;
+    }
+    .intro-heading2{
+        width: 70%;
+        font-size: 42px;
+    }
+    #intro1_1 >p{
+        width: 70%;
+    }
+    #multi-tabs, .offer-letters-mdiv, .shadowing-images{
+        padding: 30px 15px 40px;
+    }
+    .shadowing-images > img{
+        width: 100%;
+        margin: auto;
+        padding: 0px 15px;
     }
     .multi-cont{
         width: 30%;
+        padding: 0px 15px;
+        margin-bottom: 50px;
+    }
+    .box1-ol > p{
+        width: 70%;
+        margin: auto;
+    }
+    .box2-ol{
+        width: 70%;
+        margin: auto;
+    }
+    .offer-letters-mdiv{
+        padding-bottom: 100px;
+    }
+    .offer-letters-video{
         padding: 40px;
     }
-    .box1{
-        max-width: 90%;
+    .onboarding-checklist-mdiv{
+        padding: 50px 25px 40px;
+    }
+    .box2-oc{
+        width: 70%;
+        margin: auto;
     }
     .h2-tag{
         font-size: 29px;
@@ -537,7 +650,14 @@ footer{
         font-size: 25px;
     }
     #few-words{
-        padding-bottom: 0px;
+        width: 70%;
+        padding: 30px 15px 40px;
+    }
+    .few-words-div > img{
+        height: 43px;
+    }
+    .documents-mdiv{
+        padding: 70px 25px 40px;
     }
     #B2 > img{
         max-width: 40%;
@@ -545,14 +665,39 @@ footer{
     #software-setup > p, #software-setup > h2{
         width: 90%;
     }
+    .cont1{
+        width: 30%;
+    }
+    #center-video{
+        max-width: 40%;
+    }
+    .tm-checklist-mdiv{
+        margin-top: 110px;
+        padding: 200px 25px 40px;
+    }
     .box1-tm{
         padding-left: 0%;
     }
     .box2-tm{
         display: none;
     }
+    .blue-box-mdiv > h1{
+        font-size: 32px;
+        margin-bottom: 60px;
+    }
+    .blue-box-mdiv{
+        padding: 70px 15px 50px;
+    }
+    .tpp-mdiv{
+        padding: 30px 15px 40px;
+        width: 70%;
+        margin: auto;
+    }
+    .blue-box-div > div > p, .blue-box-div > div > h5{
+        margin: 0px 0px 15px 0px;
+    }
     .blue-box-div > div{
-        max-width: 70%;
+        max-width: 100%;
         margin: auto;
     }
     .box1-tpp{
@@ -565,81 +710,146 @@ footer{
         width: 20%;
         padding: 20px;
     }
-    #last-point{
-        max-width: 90%;
+    #last-point > div{
+        width: 90%;
+        padding: 30px 15px 40px;
         margin: auto;
     }
     .last-h2-tag{
-        max-width: 90%;
-        margin: auto;
+        margin: 0px 0px 25px;
     }
     .cont2{
         display: grid;
         grid-template-columns: repeat(1, 100%);
-    }   
-}
-@media screen  and (max-width: 500px){
-    #intro{
-        width: 100%;
-        padding: 0px;
     }
+    footer{
+        width: 70%;
+    }
+}
+@media screen  and (max-width: 576px){
     .intro-heading2, #intro1_1 > p{
         width: 100%;
-        margin: 0px;
+        margin: 0px auto 10px auto;
+    }
+    .shadowing-images > img{
+        padding: 0px;
     }
     img{
         max-width: 100%;
     }
-    #image-top, #multi-tabs{
+    #image-top{
         padding-bottom: 0px;
     }
     .multi-cont{
-        width: 25%;
-        padding: 20px;
+        width: 40%;
+        padding: 0px 15px;
+        margin-bottom: 50px;
     }
     .multi-cont >a >  h4, .multi-cont >a> p{
         font-size: 13px;
     }
-    .offer-letters-video{
-        display: none;
+    .offer-letters-mdiv{
+        padding: 70px 25px;
+    }
+    .box1-ol > p{
+        width: 100%;
+        margin: auto;
+    }
+    .box1{
+        max-width: 100%;
+    }
+    .box2{
+        width: 100%;
+    }
+    .box2-ol{
+        width: 100%;
     }
     .onboarding-checklist-mdiv{
+        max-width: 100%;
+        padding: 50px 25px 40px;
         padding-bottom: 10px;
         padding-top: 10px;
     }
+    .offer-letters-video{
+        display: none;
+    }
     #few-words{
-        padding-top: 40px;
+        width: 95%;
+        padding: 30px 15px 34px;
+    }
+    #few-words>p{
+        width: 100%;
     }
     .few-words-div{
         flex-direction: column;
     }
-    .few-words-div > p, .few-words-div > img{
+    .few-words-div > img{
         max-width: 100%;
         border-left: none;
         border-right: none;
     }
     .few-words-div > p{
         border: none;
+        font-size: 14px;
+        margin: 0px;
     }
     .offer-letters-mdiv, .documents-mdiv{
         padding-top: 0px;
         padding-bottom: 20px;
     }
     .documents-mdiv{
-        padding: 0px 0px 20px 0px;
+        padding: 70px 25px 40px;
+    }
+    #B4{
+        width: 100%;
+    }
+    #software-setup{
+        padding: 70px 15px 0px;
     }
     #B3, #software-setup{
         max-width: 90%;
         margin: auto;
     }
+    #center-video{
+        max-width: 265px;
+        max-height: 285px;
+    }
     .tm-checklist-mdiv{
-        padding: 50x 0px 40px 0px;
+        margin-top: 120px;
+        padding: 200px 25px 40px;
+    }
+    .tm-checklist-mdiv > div {
+        max-width: 100%;
+        margin: 0px auto;
+        padding: 0px;
     }
     .blue-box-mdiv{
-        padding: 0px;
+        padding: 70px 15px 50px;
         margin: 0px auto;
+        max-width: 100%;
     }
     .blue-h1{
         font-size: 32px;
     }
+    .tpp-mdiv{
+        width: 94%;
+    }
+    .box2-tpp > div{
+        width: 20%;
+        padding: 10px;
+    }
+    .box1-tpp{
+        max-width: 90%;
+    }
+    .box2-tpp{
+        max-width: 70%;
+    }
+    #last-point{
+        padding: 30px 15px 40px;
+        margin: auto;
+    }
+    #last-point > div{
+        padding: 0px;
+    }
+
 }

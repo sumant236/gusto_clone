@@ -5,6 +5,7 @@ p, a{
     font-family: 'Prompt', sans-serif;
 }
 #intro-cont{
+    margin-top: 80px;
     background-color: #FCF8F8;
 }
 .intro-cont-div > h2{
@@ -212,13 +213,9 @@ a:visited{
     max-width: 90%;
     margin: auto;
     padding: 80px 15px 90px 15px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.ea-mdiv > div{
-    max-width: 22%;
-    margin: 0% 0.5%;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    gap: 6.5%;
 }
 .with-border{
     box-shadow: 0.5px 0.5px 4px rgb(209, 208, 208), -0.5px -0.5px 4px rgb(196, 194, 194);
@@ -285,12 +282,55 @@ a:visited{
     text-align: center;
 }
 #last-point > div{
-    width: 30%;
+    width: 40%;
     margin: auto;
     font-weight: 700;
 }
 #last-point > div > p{
     margin: 0px 0px 25px 0px;
+}
+.nav-bar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.header{
+    background-color: white;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 6% auto auto auto auto auto auto auto auto auto 6%;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+}
+.logo{
+    padding: 10px;
+    padding-right: 0;
+}
+.logo img{
+    width: 95px;
+}
+.black-text p{
+    font-family: 'Prompt', sans-serif;
+    font-size: 15px;
+    color: black;
+}
+.black-text{
+    padding: 10px;
+    text-align: center;
+    padding-top: 0;
+}
+.black-text p:hover{
+    color: rgb(10, 128, 128);
+}
+.topic{
+    text-decoration: none;
+}
+.sign-in-nav{
+    background-color: rgb(248, 245, 242);
+    border: 0;
+    padding: 0 15px;
+    border-radius: 5px;
 }
 footer{
     width: 90%;
@@ -338,4 +378,272 @@ footer{
 .subtitle-a{
     font-weight: 300;
     color: black;
+}
+@media screen and (max-width: 1150px) {
+    .nav-bar{
+        position: static;
+    }
+    .header{
+        grid-template-columns: auto;
+    }
+    #hid{
+        display: none;
+    }
+}
+@media screen  and (max-width: 990px){
+    #intro-cont > div {
+        flex-direction: column;
+        padding: 48px 35px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        max-width: 100%;
+    }
+    #intro-cont > div > div{
+        width: 100%;
+    }
+    .intro-cont-div{
+        margin: 0px 0px 24px 0px;
+        max-width: 100%;
+    }
+    .intro-cont-div > h2{
+        width: 90%;
+        margin-left: 10px;
+    }
+    .intro-cont-img > img{
+        max-width: 100%;
+        margin: 0px;
+    }
+    .intro-cont-div > button{
+        width: 40%;
+        margin: 0px 15px 15px 0px;
+    }
+    .box-tpp{
+        padding: 60px 15px 80px 15px;
+        max-width: 90%;
+    }
+    .box-tpp > h2{
+        width: 100%;
+        margin: 0px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .box-tpp > p{
+        margin-bottom: 20px;
+    }
+    #step1, #step2, #step3, #step4{
+        padding: 48px 35px;
+    }
+    .s-mdiv, .ea-mdiv, .tpp2-mdiv{
+        padding: 60px 15px 80px 15px;
+        width: 90%;
+        margin: auto;
+    }
+    .step-even{
+        padding-right: 10%;
+    }
+    .h2-tag{
+        font-size: 32px;
+    }
+    #few-words{
+        padding: 80px 15px;
+    }
+    #few-words > h2{
+        font-size: 29px;
+        width: 100%;
+        padding: 50px 0px;
+        margin: 0px;
+    }
+    .ht-mdiv{
+        padding: 108px 50px 128px 50px;
+    }
+    .ht-img{
+        max-width: 100%;
+        margin: auto;
+        padding: 0px;
+    }
+    .ht-h2-tag, .ht-p-tag{
+        margin: 0px;
+        width: 100%;
+    }
+    .ques-mdiv{
+        padding: 60px 15px 80px 15px;
+    }
+    .ea-mdiv{
+        grid-template-columns: repeat(2, 40%);
+        gap: 5% 20%;
+        margin: auto;
+    }
+    .dropdown > a{
+        margin-right: 50%;
+    }
+    .box1-tpp2, .box2-tpp2{
+        max-width: 80%;
+        margin: auto;
+    }
+    #last-point{
+        padding: 55px 15px 110px;
+    }
+    #last-point > div {
+        width: 40%;
+        margin: auto;
+    }
+    .cont{
+        grid-template-columns: repeat(2, 50%);
+        gap: 5%;
+    }
+    #talk-shop{
+        margin-top: 200px;
+    }
+}
+@media screen and (max-width: 768px){
+    .intro-cont-div{
+        margin: 0px 0px 24px 0px;
+        max-width: 100%;
+    }
+    #intro-cont > div{
+        max-width: 100%;
+    }
+    .intro-cont-div > h2{
+        font-size: 42px;
+        width: 100%;
+        margin: 0px 0px 24px;
+    }
+    .intro-cont-div > button{
+        margin: 0px 0px 30px 0px;
+        width: 100%;
+    }
+    #step1, #step2, #step3, #step4{
+        padding: 48px 24px;
+    }
+    .box-tpp{
+        padding: 30px 15px 40px;
+    }
+    #few-words > h2{
+        width: 70%;
+        margin: auto;
+        padding: 24px 15px;
+        font-size: 25px;
+    }
+    .s-mdiv{
+        padding: 30px 15px 40px;
+    }
+    .ht-h2-tag, .ques-h2{
+        font-size: 32px;
+    }
+    .ques-h3{
+        font-size: 25px;
+    }
+    .h2-tag{
+        font-size: 29px;
+    }
+    .p-tag{
+        font-size: 15px;
+    }
+    .ea-mdiv{
+        grid-template-columns: repeat(1, 80%);
+        gap: 2%;
+        padding-left: 10%;
+        padding-right: 0px;
+    }
+    .tpp2-mdiv{
+        margin: 100px auto 0px auto;
+        padding: 72px 0px;
+    }
+    #last-point{
+        padding: 20px 15px 40px;
+    }
+    #last-point > div{
+        width: 100%;
+        margin: auto;
+    }
+    .cont{
+        grid-template-columns: repeat(1, 100%);
+    }
+    #talk-shop{
+        margin-top: 800px;
+    }
+}
+@media screen and (max-width: 578px){
+    .intro-cont-div > div{
+        padding: 48px 24px;
+    }
+    .intro-cont-div > h2{
+        font-size: 42px;
+    }
+    .s-mdiv{
+        flex-direction: column;
+        width: 95%;
+        margin: auto;
+    }
+    .s-mdiv > div{
+        width: 100%;
+    }
+    .s-div{
+        max-width: 100%;
+    }
+    #step1, #step2, #step3, #step4, .ht-mdiv{
+        padding: 48px 24px;
+    }
+    .step-even{
+        padding: 40px 0px 0px;
+    }
+    .box-tpp{
+        padding: 60px 25px;
+        max-width: 95%;
+    }
+    #few-words{
+        padding: 71px 10px;
+        margin: auto;
+        width: 95%;
+    }
+    #few-words > h2{
+        padding: 24px 10px 36px;
+        width: 100%;
+        margin: 0px;
+    }
+    .few-words-div{
+        flex-direction: column;
+    }
+    .few-words-div > p{
+        border: none;
+    }
+    .few-words-div > img{
+        border-top: none;
+        border-right: none;
+    }
+    .ht-mdiv{
+        flex-direction: column;
+        padding: 30px 15px 40px;
+    }
+    .ht-mdiv > div{
+        width: 100%;
+    }
+    .ques-mdiv, .ea-mdiv{
+        padding: 30px 15px 40px;
+    }
+    .dropdown > a{
+        margin-right: 39%;
+        width: 90%;
+    }
+    .ea-mdiv{
+        grid-template-columns: repeat(1, 95%);
+    }
+    .tpp2-mdiv{
+        padding: 72px 24px;
+        margin: 100px 0px 0px;
+    }
+    .box2-tpp2{
+        flex-wrap: wrap;
+    }
+    .box2-tpp2 > div{
+        width: 40%;
+        margin-bottom: 16px;
+    }
+    #last-point{
+        padding: 30px 40px 70px;
+    }
+    footer{
+        padding: 0px;
+        margin: 0px;
+    }
 }
