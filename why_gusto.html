@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Payroll, Benefits, and HR Software Built for Small Buisnesses | Gusto            
         </title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +18,7 @@
                 width: 95%;
                 margin:auto;
                 padding: 20px;
+                padding-top: 150px;
             }
             .t-center{
                 text-align: center;
@@ -307,8 +309,64 @@
                 font-weight: 600;
                 line-height: 56px;
             }
+            .nav-bar{
+                position: fixed;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+            }
+            .header{
+                padding-top: 10px;
+                background-color: white;
+                display: grid;
+                grid-template-columns: 6% auto auto auto auto auto auto auto auto auto 6%;
+                grid-template-rows: auto;
+                grid-gap: 5px;
+            }
+            .logo{
+                padding: 10px;
+                padding-right: 0;
+            }
+            .logo img{
+                width: 95px;
+            }
+            .black-text p{
+                font-family: 'Prompt', sans-serif;
+                font-size: 15px;
+                color: black;
+            }
+            .black-text{
+                padding: 10px;
+                text-align: center;
+                padding-top: 0;
+            }
+            .black-text p:hover{
+                color: rgb(10, 128, 128);
+            }
+            a{
+                text-decoration: none;
+            }
+            .sign-in-nav{
+                background-color: rgb(248, 245, 242);
+                border: 0;
+                padding: 0 15px;
+                border-radius: 5px;
+            }
+            @media screen and (max-width: 1300px) {
+                .nav-bar{
+                    position: static;
+                }
+                .header{
+                    grid-template-columns: auto;
+                }
+                #hid-menu{
+                    display: none;
+                }
+            }
             @media only screen and (max-width: 766px) {
                 .container{
+                    padding-top: 40px;
                     max-width: 90%;
                 }
                 .img-cont > img{
@@ -414,6 +472,9 @@
                 }
             }
             @media only screen and (min-width: 768px) and (max-width: 1200px){
+                .container{
+                    padding-top: 40px;
+                }
                 .container > h1{
                     font-size: 42px;
                 }
@@ -513,6 +574,40 @@
     </head>
     <body>
         <div>
+            <section class="nav-bar">
+                <div class="header">
+                    <div class="extraspace"></div>
+                    <div class="logo">
+                        <a href="front.html" class="logo">
+                            <img src="https://prod.gusto-assets.com/assets/svg/header/gusto-logo-bfed4fde4bd2b5dd364ab0e58f77fc90aeefa2f1ecdb7fff524279642e23f9c2.svg"/>
+                        </a>
+                    </div>
+                    <div class="black-text">
+                        <a href="why_gusto.html"><p>Why Gusto</p></a>
+                    </div>
+                    <div class="black-text">
+                        <a href="gustoHiringAndOnboarding.html"><p>Hiring and Onboarding</p></a>
+                    </div>
+                    <div class="black-text">
+                        <a href="pricing.html"><p>Pricing</p></a>
+                    </div>
+                    <div class="black-text">
+                        <a href="time_tools.html"><p>Time tools</p></a>
+                    </div>
+                    <div class="black-text" id="hid-menu">
+                        <a href="#resources"><p>Resources</p></a>
+                    </div>
+                    <div class="black-text">
+                        <a href="gustoForNewBusiness.html"><p>Gusto for new business</p></a>
+                    </div>
+                    <div class="black-text">
+                        <a href="firstpageNew.html"><p>Switching to Gusto</p></a>
+                    </div>
+                    <div class="black-text" id="hid-menu">
+                        <a href="#signin"><button class="sign-in-nav"><p>Sign in</p></button></a>
+                    </div>
+                </div>
+            </section>
             <div class="container">
                 <p class="t-center gcentra-font red-font">Welcome to the people platform</p>
                 <h1 class="t-center">Gusto makes it easy to<br><span>onboard</span>, <span>pay</span>, <span>insure</span>, and <span>support</span><br>your hardworking team.</h1>
