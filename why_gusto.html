@@ -10,6 +10,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap" rel="stylesheet">
         <style>
+            body{
+                margin: 0;
+            }
             .container{
                 width: 95%;
                 margin:auto;
@@ -57,7 +60,7 @@
             }
             .grey-cont{
                 background-color: #f8f5f2;
-                width: 100%;
+                max-width: 100%;
                 padding-top: 100px;
             }
             .grey-cont > h2{
@@ -77,7 +80,7 @@
                 display: grid;
                 grid-template-columns: auto auto auto auto auto auto;
                 padding-bottom: 100px;
-                grid-gap: 16px;
+                grid-gap: auto;
             }
             .grey-div-icon > img{
                 min-width: 65px;
@@ -244,8 +247,12 @@
             .hori-block2-box p{
                 font-size: 15px;
                 font-weight: 500;
-                margin-bottom: 24px;
+                margin-bottom: 20px;
                 font-family: 'Prompt', sans-serif;
+            }
+            .brdr{
+                width: 200px;
+                border-bottom: 2px solid rgb(234, 234, 234);
             }
             .hori-block2-box h3{
                 font-family: 'Playfair Display', serif;
@@ -287,10 +294,11 @@
                 margin-top: 100px ;
             }
             #end-cont{
-                width: 100%;
+                width: auto;
                 background-color: white;
                 margin-top: -70px;
                 padding-top: 150px;
+                padding-bottom: 100px;
             }
             #end-cont h2{
                 font-family: 'Playfair Display', serif;
@@ -299,6 +307,208 @@
                 font-weight: 600;
                 line-height: 56px;
             }
+            @media only screen and (max-width: 766px) {
+                .container{
+                    max-width: 90%;
+                }
+                .img-cont > img{
+                    max-width: 100%;
+                }
+                .container > h1{
+                    font-size: 42px;
+                }
+                .container p{
+                    font-size: 15px;
+                }
+                .grey-cont{
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+                .grey-cont > h2{
+                    font-size: 32px;
+                }
+                .grey-cont > p{
+                    font-size: 15px;
+                }
+                .grey-cont > div{
+                    max-width: 100%;
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    
+                }
+                .grey-div-icon{
+                    margin-bottom: 35px;
+                }
+                .block-columns{
+                    width: 95%;
+                    margin-top: 40px;
+                    flex-direction: column;
+                }
+                .block-columns h3{
+                    font-size: 29px;
+                }
+                #block-img-cont{
+                    margin-left: 0;
+                }
+                .block-columns img{
+                    width: 100%;
+                }
+                #block-columns2{
+                    flex-direction: column;
+                    margin-bottom: 60px;
+                }
+                #block-padding{
+                    padding: 0;
+                }
+                #block-columns2 > div{
+                    margin: 0;
+                    padding: 0;
+                }
+                #block-columns2 img{
+                    margin-top: 25px;
+                    margin-left: 0;
+                    width: 100%;
+                }
+                #block-img-cont2{
+                    max-height: 425px;
+                    overflow: hidden;
+                }
+                .hori-block{
+                    padding-top: 20px;
+                }
+                .hori-block-text{
+                    margin-top: 10px;
+                }
+                .hori-block-in{
+                    flex-wrap: wrap;
+                    width: 90%;
+                }
+                .hori-block-text h3{
+                    font-size: 29px;
+                }
+                .hori-block-in img{
+                    margin-left: 0;
+                    width: 100%;
+                }
+                .hori-block2{
+                    flex-direction: column-reverse;
+                }
+                .hori-block2 img{
+                    width: 100%;
+                }
+                .hori-block2-img{
+                    margin-right: 0;
+                }
+                .review-block h2{
+                    font-size: 29px;
+                }
+                .review-block{
+                    margin-top: 50px;
+                    padding-top: 10px;
+                }
+                .review-img-cont > img{
+                    width: 100%;
+                }
+                #end-cont h2{
+                    font-size: 32px;
+                }
+            }
+            @media only screen and (min-width: 768px) and (max-width: 1200px){
+                .container > h1{
+                    font-size: 42px;
+                }
+                .img-cont > img{
+                    width: 550px;
+                }
+                .img-cont{
+                    margin-bottom: -40px;
+                }
+                .grey-cont > h2{
+                    font-size: 36px;
+                    line-height: 48px;
+                }
+                .grey-cont > div{
+                    max-width: 80%;
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                }
+                .grey-cont > div{
+                    margin-bottom: 0;
+                    padding-bottom: 60px;
+                }
+                .grey-div-icon{
+                    margin-bottom: 35px;
+                }
+                .block-columns{
+                    width: 90%;
+                    margin-top: 40px;
+                    flex-direction: column;
+                }
+                .block-columns h3{
+                    font-size: 29px;
+                }
+                #block-padding{
+                    padding: 0;
+                }
+                .block-columns img{
+                    width: 100%;
+                }
+                #block-img-cont{
+                    margin-left: 0;
+                }
+                #block-columns2{
+                    flex-direction: column;
+                    margin-bottom: 60px;
+                }
+                #block-columns2 > div{
+                    margin: 0;
+                    padding: 0;
+                }
+                #block-columns2 img{
+                    margin-top: 25px;
+                    margin-left: 0;
+                    width: 100%
+                }
+                .hori-block{
+                    padding-top: 20px;
+                }
+                .hori-block-text{
+                    margin-top: 10px;
+                }
+                .hori-block-in{
+                    flex-wrap: wrap;
+                    width: 90%;
+                }
+                .hori-block-text h3{
+                    font-size: 29px;
+                }
+                .hori-block-in img{
+                    margin-left: 0;
+                    width: 100%;
+                }
+                .hori-block2{
+                    flex-direction: column-reverse;
+                }
+                .hori-block2 img{
+                    width: 100%;
+                }
+                .hori-block2-img{
+                    margin-right: 0;
+                }
+                .points-l2{
+                    margin-right: 200px;
+                }
+                .review-block h2{
+                    font-size: 38px;
+                }
+                .review-block{
+                    margin-top: 50px;
+                    padding-top: 10px;
+                }
+                #end-cont h2{
+                    font-size: 38px;
+                }
+            }  
         </style>
     </head>
     <body>
@@ -349,25 +559,25 @@
                 <div id="block-padding">
                     <p class="red-font">Onboard your team</p>
                     <h3>Set employees up for success from the start.</h3>
-                    <p id="block-content">Our customizable onboarding checklists were built to keep you organized. You<br>can send offer letters, e-sign and store new-hire paperwork, and set up software<br>in just a few clicks.</p>
+                    <p id="block-content">Our customizable onboarding checklists were built to keep you organized. You can send offer letters, e-sign and store new-hire paperwork, and set up software in just a few clicks.</p>
                     <div class="grey-button">
                         <p>See more about onboarding</p>
                     </div>
                 </div>
-                <div>
+                <div id="block-img-cont">
                     <img src="https://prod.gusto-assets.com/wp-content/uploads/RockyMountainClay-DenverCO-0963%402x.jpg"/>
                 </div>
             </div>
             <div class="block-columns" id="block-columns2">
                 <div id="block-padding">
                     <p class="red-font">Pay your team</p>
-                    <h3>Pay employees for their hard<br>work.</h3>
-                    <p id="block-content">We made payroll easy. With just a few clicks, we calculate and file<br>your payroll taxes. From there, everything syncs automatically —<br>time tracking, new hires, benefits plans, and more.</p>
+                    <h3>Pay employees for their hard work.</h3>
+                    <p id="block-content">We made payroll easy. With just a few clicks, we calculate and file your payroll taxes. From there, everything syncs automatically —time tracking, new hires, benefits plans, and more.</p>
                     <div class="grey-button2">
                         <p>See more about payroll</p>
                     </div>
                 </div>
-                <div>
+                <div id="block-img-cont2">
                     <img src="https://prod.gusto-assets.com/wp-content/uploads/why-gusto-pay%402x.jpg"/>
                 </div>
             </div>
@@ -376,7 +586,7 @@
                     <div class="hori-block-text">
                         <p class="red-font">Insure your team</p>
                         <h3>Keep everyone happy and healthy.</h3>
-                        <p id="hori-content">Get help finding health benefits that fit your team and budget. Already offer<br>benefits? We’ll move your plan over, so it’s all auto-deducted from payroll.</p>
+                        <p id="hori-content">Get help finding health benefits that fit your team and budget. Already offer benefits? We’ll move your plan over, so it’s all auto-deducted from payroll.</p>
                         <div class="key-points">
                             <div class="points-l">
                                 <div class="tick">
@@ -434,28 +644,34 @@
                 </div>
                 <div class="hori-block2-box">
                     <p class="red-font">Support your team</p>
-                    <h3>Help your team make the<br>most of their paychecks.</h3>
-                    <p id="hori-content2">Supporting your team goes beyond payday. With Gusto, you can<br>give employees tools and resources to build a healthy and secure<br>financial future.</p>
+                    <h3>Help your team make the most of their paychecks.</h3>
+                    <p id="hori-content2">Supporting your team goes beyond payday. With Gusto, you can give employees tools and resources to build a healthy and secure financial future.</p>
                     <div>
                         <div class="points-l2">
                             <p>Gusto Wallet app ></p>
+                            <div class="brdr"></div>
                         </div>
                         <div class="points2">
                             <p>Gusto Cashout™ ></p>
+                            <div class="brdr"></div>
                         </div>
                         <div class="clr"></div>
                         <div class="points-l2">
                             <p>Gusto debit card ></p>
+                            <div class="brdr"></div>
                         </div>
                         <div class="points2">
                             <p>529 college savings></p>
+                            <div class="brdr"></div>
                         </div>
                         <div class="clr"></div>
                         <div class="points-l2">
                             <p>Automatic savings ></p>
+                            <div class="brdr"></div>
                         </div>
                         <div class="points2">
                             <p>401(k) retirement savings ></p>
+                            <div class="brdr"></div>
                         </div>
                         <div class="clr"></div>
                     </div>
