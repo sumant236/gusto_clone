@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Philosopher&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap">
     <title>font-Page</title>
     <style>
         h1{
-            font-family: 'Philosopher', sans-serif !important;
+            font-family: 'Playfair Display', serif;
+            font-size: 41px !important;
         }
         p{
-            font-family: 'Roboto', sans-serif !important;
+            font-family: 'Prompt', sans-serif;
+            font-weight: 300;
+            font-size: 14px !important;
         }
         #info{
             padding: 4%;
@@ -35,7 +41,7 @@
         }
         #info > p + button{
             width: 100%;
-            height: 20%;
+            height: 15%;
             background-color: #f45d48;
             color: white;
             border: 2px solid #f45d48;
@@ -49,7 +55,7 @@
             text-align: center;
         }
         #info > div > p , #info > div > a{
-            margin: 3% 2%;
+            margin: 3% 1%;
         }
         #middleBox{
             border: 2px solid #f8f5f2;
@@ -95,8 +101,6 @@
             color: white;
         }
         #price > h1{
-            font-family: 'Caveat', cursive;
-            font-family: 'Hahmlet', serif;
             font-size: 45px;
         }
         @media only screen and (max-width: 809px) and (min-width: 711px) {
@@ -131,7 +135,7 @@
             font-size: 15px;
             }
             #info > p + button{
-            height: 15%;
+            height: 40px;
             }
             #imgBox{
             height: 0px !important;
@@ -255,6 +259,18 @@
             }
             #price > button{
                 width: 100px;
+            }
+        }
+        @media screen and (min-width:992px) {
+            #text{
+                width: 51% !important;
+            }
+            #price > h1{
+                width: 55%;
+                margin: auto;
+            }
+            #price > button{
+                margin-top: 2%;
             }
         }
     </style>
