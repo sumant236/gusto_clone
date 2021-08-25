@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,34 +13,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap">
     <title>font-Page</title>
     <style>
-        h1{
+        h1 {
             font-family: 'Playfair Display', serif;
             font-size: 41px !important;
         }
-        p{
+
+        p {
             font-family: 'Prompt', sans-serif;
             font-weight: 300;
             font-size: 14px !important;
         }
-        #info{
+
+        #info {
             padding: 4%;
             background-color: white;
             margin: 5%;
             border-radius: 10px;
+            margin-top: 8%;
         }
-        #info > h1 , #middleBox > div > h1{
+
+        #info>h1,
+        #middleBox>div>h1 {
             margin-top: 0px;
             font-size: 46px;
         }
-        #middleBox > div > h1{
+
+        #middleBox>div>h1 {
             margin-top: 0px;
             font-size: 33px;
         }
-        #info > h1 + p , #price > p{
+
+        #info>h1+p,
+        #price>p {
             margin-top: 0px;
             font-size: 18px;
         }
-        #info > p + button{
+
+        #info>p+button {
             width: 100%;
             height: 15%;
             background-color: #f45d48;
@@ -48,51 +58,65 @@
             border-radius: 6px;
             font-size: 15px;
         }
-        #info > div{
+
+        #info>div {
             width: 80%;
             margin: 0px auto;
             display: flex;
             text-align: center;
         }
-        #info > div > p , #info > div > a{
+
+        #info>div>p,
+        #info>div>a {
             margin: 3% 1%;
         }
-        #middleBox{
+
+        #middleBox {
             border: 2px solid #f8f5f2;
             background-color: #f8f5f2;
         }
-        #middleBox > div > h1 , #middleBox > div > p , #price{
+
+        #middleBox>div>h1,
+        #middleBox>div>p,
+        #price {
             text-align: center;
         }
-        #middleBox > div{
+
+        #middleBox>div {
             margin: auto;
             width: 70%;
             margin-top: 100px;
             height: 150px;
         }
-        #middleBox > div > p{
+
+        #middleBox>div>p {
             font-size: 20px;
             color: teal;
             font-weight: 600;
         }
-        #icons{
+
+        #icons {
             width: 800px !important;
             display: flex;
             width: fit-content;
             margin: 0px auto;
         }
-        #icons > div > h4{
+
+        #icons>div>h4 {
             margin: 7px;
             text-align: center;
         }
-        #icons > div{
+
+        #icons>div {
             text-align: center;
             margin: 0px 2%;
         }
-        #price{
+
+        #price {
             margin: 10%;
         }
-        #price > button{
+
+        #price>button {
             border: 2px solid #f45d48;
             width: 13%;
             height: 45px;
@@ -100,182 +124,418 @@
             background-color: #f45d48;
             color: white;
         }
-        #price > h1{
+
+        #price>h1 {
             font-size: 45px;
         }
+
         @media only screen and (max-width: 809px) and (min-width: 711px) {
-            #upperBox{
-            border-top: 2px solid white;
-            border-bottom: 2px solid #f8f5f2;
-            height: 630px;
-            background-image: url(https://prod.gusto-assets.com/assets/homepage/hp-stems-brooklyn-085772ab7bf026c0c20c40de82c7c5ecf0fb01e63755f84f033cee949b87c93a.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-            #info{
+            #upperBox {
+                border-top: 2px solid white;
+                border-bottom: 2px solid #f8f5f2;
+                height: 630px;
+                background-image: url(https://prod.gusto-assets.com/assets/homepage/hp-stems-brooklyn-085772ab7bf026c0c20c40de82c7c5ecf0fb01e63755f84f033cee949b87c93a.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            #info {
                 width: 45%;
                 margin: 10% auto;
             }
-            #info > p + button{
-            height: 12%;
+
+            #info>p+button {
+                height: 12%;
             }
-            #info > h1{
+
+            #info>h1 {
                 font-size: 30px;
             }
-            #icons{
-            width: 600px;
+
+            #icons {
+                width: 600px;
             }
-            #info > div{
-            width: 100%;
-            margin: 0px auto;
-            display: flex;
-            text-align: center;
+
+            #info>div {
+                width: 100%;
+                margin: 0px auto;
+                display: flex;
+                text-align: center;
             }
-            #info > div > p , #info > div > a{
-            font-size: 15px;
+
+            #info>div>p,
+            #info>div>a {
+                font-size: 15px;
             }
-            #info > p + button{
-            height: 40px;
+
+            #info>p+button {
+                height: 40px;
             }
-            #imgBox{
-            height: 0px !important;
+
+            #imgBox {
+                height: 0px !important;
             }
-            #icons + div{
+
+            #icons+div {
                 margin-top: 50px !important;
                 width: 100%;
                 height: 230px !important;
             }
-            #icons + div > img{
+
+            #icons+div>img {
                 width: 100%;
                 height: 100%;
             }
-            #icons{
+
+            #icons {
                 width: 90% !important;
             }
-            #price > button{
+
+            #price>button {
                 width: 100px;
             }
         }
+
         @media only screen and (min-width: 996px) {
-            #upperBox{
-            border-top: 2px solid white;
-            border-bottom: 2px solid #f8f5f2;
-            height: 630px;
-            background-image: url(https://prod.gusto-assets.com/assets/homepage/hp-stems-brooklyn-085772ab7bf026c0c20c40de82c7c5ecf0fb01e63755f84f033cee949b87c93a.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
+            #upperBox {
+                border-top: 2px solid white;
+                border-bottom: 2px solid #f8f5f2;
+                height: 630px;
+                background-image: url(https://prod.gusto-assets.com/assets/homepage/hp-stems-brooklyn-085772ab7bf026c0c20c40de82c7c5ecf0fb01e63755f84f033cee949b87c93a.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
             }
-            #info{
+
+            #info {
                 height: 50%;
                 width: 35%;
             }
-            #info > h1 + p{
+
+            #info>h1+p {
                 font-size: 18px;
             }
-            #imgBox{
-            height: 0px !important;
+
+            #imgBox {
+                height: 0px !important;
             }
-            #icons + div{
+
+            #icons+div {
                 margin-top: 50px !important;
             }
         }
+
         @media only screen and (min-width:810px) and (max-width:995px) {
-            #upperBox{
-            border-top: 2px solid white;
-            border-bottom: 2px solid #f8f5f2;
-            height: 630px;
-            background-image: url(https://prod.gusto-assets.com/assets/homepage/hp-stems-brooklyn-085772ab7bf026c0c20c40de82c7c5ecf0fb01e63755f84f033cee949b87c93a.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
+            #upperBox {
+                border-top: 2px solid white;
+                border-bottom: 2px solid #f8f5f2;
+                height: 630px;
+                background-image: url(https://prod.gusto-assets.com/assets/homepage/hp-stems-brooklyn-085772ab7bf026c0c20c40de82c7c5ecf0fb01e63755f84f033cee949b87c93a.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
             }
-        #info{
-            height: 55%;
-            width: 35%;
-        }   
-        #info > h1 + p{
-            font-size: 15px;
-        }
-        #info > p + button{
-            height: 15%;
-        }
-        #icons{
-            width: 700px;
-        }
-        #info > div {
-            width: 100%;
-        }
-        #imgBox{
-            height: 0px !important;
-        }
-        #icons + div{
+
+            #info {
+                height: 55%;
+                width: 35%;
+            }
+
+            #info>h1+p {
+                font-size: 15px;
+            }
+
+            #info>p+button {
+                height: 15%;
+            }
+
+            #icons {
+                width: 700px;
+            }
+
+            #info>div {
+                width: 100%;
+            }
+
+            #imgBox {
+                height: 0px !important;
+            }
+
+            #icons+div {
                 margin-top: 50px !important;
                 width: 100%;
                 height: 280px !important;
             }
-            #icons + div > img{
+
+            #icons+div>img {
                 width: 70%;
                 height: 100%;
             }
         }
+
         @media only screen and (max-width:710px) {
-            #upperBox{
-            background-color: #f8f5f2;
-            border-top: 2px solid white;
-            border-bottom: 2px solid #f8f5f2;
+            #upperBox {
+                background-color: #f8f5f2;
+                border-top: 2px solid white;
+                border-bottom: 2px solid #f8f5f2;
             }
-            #middleBox > div > h1 , #price > h1{
+
+            #middleBox>div>h1,
+            #price>h1 {
                 font-size: 24px;
                 text-align: center;
             }
-            #icons{
+
+            #icons {
                 margin-top: 60px !important;
                 width: 95% !important;
                 display: grid;
                 grid-template-columns: auto auto auto;
-                grid-template-rows:  auto auto;
+                grid-template-rows: auto auto;
                 grid-gap: 10px;
                 height: 250px !important;
             }
-            #icons + div{
+
+            #icons+div {
                 margin-top: 50px !important;
                 width: 100%;
                 height: 230px !important;
             }
-            #icons + div > img{
+
+            #icons+div>img {
                 width: 100%;
                 height: 100%;
             }
-            #text{
+
+            #text {
                 width: 100% !important;
             }
-            #info > p + button{
+
+            #info>p+button {
                 height: 45px !important;
             }
-            #imgBox{
+
+            #imgBox {
                 background-image: url(https://prod.gusto-assets.com/assets/homepage/hp-stems-brooklyn-085772ab7bf026c0c20c40de82c7c5ecf0fb01e63755f84f033cee949b87c93a.jpg);
                 background-size: cover;
                 width: 100% !important;
                 height: 270px !important;
             }
-            #price > button{
+
+            #price>button {
                 width: 100px;
             }
         }
+
         @media screen and (min-width:992px) {
-            #text{
+            #text {
                 width: 51% !important;
             }
-            #price > h1{
+
+            #price>h1 {
                 width: 55%;
                 margin: auto;
             }
-            #price > button{
+
+            #price>button {
                 margin-top: 2%;
+            }
+        }
+
+        /* This is the CSS of footer */
+        footer {
+            width: 90%;
+            padding: 55px 15px 50px 15px;
+            margin: auto;
+            font-size: 15px;
+        }
+
+        .cont {
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+        }
+
+        #talk-shop {
+            display: flex;
+            margin-bottom: 10px;
+            padding: 0px 15px;
+        }
+
+        #talk-shop>div {
+            border-top: 1px solid #e7e7ec;
+            width: 66.666%;
+            margin: auto;
+        }
+
+        .cont>div {
+            padding: 0px 15px 40px 15px;
+        }
+
+        .f-title {
+            color: black;
+            font-weight: 600;
+            margin: 0px 0px 10px 0px;
+        }
+
+        .blue-text {
+            color: #0A8080;
+            margin: 0px 0px 10px 0px;
+        }
+
+        .grey-text {
+            color: #525257;
+            margin: 0px 0px 10px 0px;
+        }
+
+        .subtitle {
+            color: #525257;
+            margin: 0px 0px 10px 0px;
+        }
+
+        .subtitle:hover,
+        .blue-text:hover {
+            color: #007bff;
+        }
+
+        .subtitle-a {
+            font-weight: 300;
+            color: black;
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 1200px) {
+            .cont {
+                grid-template-columns: repeat(2, 50%);
+                gap: 5%;
+            }
+        }
+
+        @media only screen and (max-width: 766px) {
+            .cont {
+                display: grid;
+                grid-template-columns: repeat(1, 100%);
+            }
+        }
+
+        /* This is the CSS of our header */
+        .nav-bar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+        }
+
+        .header {
+            background-color: white;
+            padding-top: 10px;
+            display: grid;
+            grid-template-columns: 6% auto auto auto auto auto auto auto auto auto 6%;
+            grid-template-rows: auto;
+            grid-gap: 5px;
+        }
+
+        .logo {
+            padding: 10px;
+            padding-right: 0;
+        }
+
+        .logo img {
+            width: 95px;
+        }
+
+        .black-text p {
+            font-family: 'Prompt', sans-serif;
+            font-size: 15px;
+            color: black;
+        }
+
+        .black-text {
+            padding: 10px;
+            text-align: center;
+            padding-top: 0;
+        }
+
+        .black-text p:hover {
+            color: rgb(10, 128, 128);
+        }
+
+        .topic {
+            text-decoration: none;
+        }
+
+        .sign-in-nav {
+            background-color: rgb(248, 245, 242);
+            border: 0;
+            padding: 0 15px;
+            border-radius: 5px;
+        }
+
+        @media screen and (max-width: 1150px) {
+            .nav-bar {
+                position: static;
+            }
+
+            .header {
+                grid-template-columns: auto;
+            }
+
+            #hid {
+                display: none;
             }
         }
     </style>
 </head>
+
 <body>
+    <section class="nav-bar">
+        <div class="header">
+            <div class="extraspace"></div>
+            <div class="logo">
+                <a href="front.html" class="logo">
+                    <img
+                        src="https://prod.gusto-assets.com/assets/svg/header/gusto-logo-bfed4fde4bd2b5dd364ab0e58f77fc90aeefa2f1ecdb7fff524279642e23f9c2.svg" />
+                </a>
+            </div>
+            <div class="black-text">
+                <a class="topic" href="why_gusto.html">
+                    <p>Why Gusto</p>
+                </a>
+            </div>
+            <div class="black-text">
+                <a class="topic" href="gustoHiringAndOnboarding.html">
+                    <p>Hiring and Onboarding</p>
+                </a>
+            </div>
+            <div class="black-text">
+                <a class="topic" href="pricing.html">
+                    <p>Pricing</p>
+                </a>
+            </div>
+            <div class="black-text">
+                <a class="topic" href="time_tools.html">
+                    <p>Time tools</p>
+                </a>
+            </div>
+            <div class="black-text" id="hid">
+                <a class="topic" href="#resources">
+                    <p>Resources</p>
+                </a>
+            </div>
+            <div class="black-text">
+                <a class="topic" href="gustoForNewBusiness.html">
+                    <p>Gusto for new business</p>
+                </a>
+            </div>
+            <div class="black-text">
+                <a class="topic" href="firstpageNew.html">
+                    <p>Switching to Gusto</p>
+                </a>
+            </div>
+            <div class="black-text" id="hid">
+                <a class="topic" href="#signin"><button class="sign-in-nav">
+                        <p>Sign in</p>
+                    </button></a>
+            </div>
+        </div>
+    </section>
+    <!-- the above html is our header -->
     <div id="upperBox">
         <div id="info">
             <h1>Set your business up with modern payroll, benefits, and HR.</h1>
@@ -295,32 +555,39 @@
         </div>
         <div id="icons">
             <div>
-                <img src="https://prod.gusto-assets.com/assets/components/people_platform/icon-pp-payroll-money-9afdaddf159ed6fb411b5df04831415b702164fe3af17c9d970d7b07702aed8e.png.webp"  />;
-                <h4>Full-service<br/>payroll</h4>
+                <img
+                    src="https://prod.gusto-assets.com/assets/components/people_platform/icon-pp-payroll-money-9afdaddf159ed6fb411b5df04831415b702164fe3af17c9d970d7b07702aed8e.png.webp" />;
+                <h4>Full-service<br />payroll</h4>
             </div>
             <div>
-                <img src="https://prod.gusto-assets.com/assets/components/people_platform/icon-pp-benefits-c209f59d18d8e0d8045c6245e0336da30683a8cae5ab27f96a8e7b4da2e15aff.png.webp" />
-                <h4>Medical,<br/>dental, vision</h4>
+                <img
+                    src="https://prod.gusto-assets.com/assets/components/people_platform/icon-pp-benefits-c209f59d18d8e0d8045c6245e0336da30683a8cae5ab27f96a8e7b4da2e15aff.png.webp" />
+                <h4>Medical,<br />dental, vision</h4>
             </div>
             <div>
-                <img src="https://prod.gusto-assets.com/assets/components/people_platform/icon-pp-experts-fd36f35eaaef6b833cd4590acf39bac81dca1ca3a4b7a6773e5383446bcd1d4d.png.webp" />
-                <h4>Certified HR<br/>experts</h4>
+                <img
+                    src="https://prod.gusto-assets.com/assets/components/people_platform/icon-pp-experts-fd36f35eaaef6b833cd4590acf39bac81dca1ca3a4b7a6773e5383446bcd1d4d.png.webp" />
+                <h4>Certified HR<br />experts</h4>
             </div>
             <div>
-                <img src="https://prod.gusto-assets.com/assets/components/people_platform/icon-pp-time-tracking-ce7f8e5d76a0d11ac8d77aa4ff88cf0366cf58f62807267d776781aaf412aba2.png.webp"/>
-                <h4>Time<br/> tracking</h4>
+                <img
+                    src="https://prod.gusto-assets.com/assets/components/people_platform/icon-pp-time-tracking-ce7f8e5d76a0d11ac8d77aa4ff88cf0366cf58f62807267d776781aaf412aba2.png.webp" />
+                <h4>Time<br /> tracking</h4>
             </div>
             <div>
-                <img src="https://prod.gusto-assets.com/assets/components/people_platform/icon-pp-compliance-4f2844a6f149ef083a29ef16cf922dc41b2fc8bef78277bdcbb42ef1634eb342.png.webp" />
-                <h4>Hiring and <br/> onboarding</h4>
+                <img
+                    src="https://prod.gusto-assets.com/assets/components/people_platform/icon-pp-compliance-4f2844a6f149ef083a29ef16cf922dc41b2fc8bef78277bdcbb42ef1634eb342.png.webp" />
+                <h4>Hiring and <br /> onboarding</h4>
             </div>
             <div>
-                <img src="https://prod.gusto-assets.com/assets/components/people_platform/icon-pp-chart-d9c3c82d36815fa66c5327ed836f71e03a2e485a500677236e75a3a794dc22d7.png.webp" style="margin-top: 13px;"/>
-                <h4>Employee finance <br/> tools</h4>
+                <img src="https://prod.gusto-assets.com/assets/components/people_platform/icon-pp-chart-d9c3c82d36815fa66c5327ed836f71e03a2e485a500677236e75a3a794dc22d7.png.webp"
+                    style="margin-top: 13px;" />
+                <h4>Employee finance <br /> tools</h4>
             </div>
         </div>
         <div style="text-align: center; height: 300px; margin: 0px; margin: auto;">
-            <img src="https://prod.gusto-assets.com/assets/components/people_platform/illo-people-platform-083b0fcab67e4afc6cb36e94f1ce582e5560ad30a10bc360c25e5a2c721527e3.png.webp" />
+            <img
+                src="https://prod.gusto-assets.com/assets/components/people_platform/illo-people-platform-083b0fcab67e4afc6cb36e94f1ce582e5560ad30a10bc360c25e5a2c721527e3.png.webp" />
         </div>
     </div>
     <div id="price">
@@ -328,5 +595,119 @@
         <h1>Join more than 200,000 businesses and their teams.</h1>
         <button>Get Started</button>
     </div>
+    <!-- The html of footer -->
+    <footer>
+        <div class="cont">
+            <div id="box1">
+                <div>
+                    <p class="f-title">Built for you</p>
+                    <p class="blue-text">Gusto for new business</p>
+                    <p class="grey-text">Set your new business up with modern payroll, benefits, and HR</p>
+                </div>
+                <div>
+                    <p class="blue-text">Switching to Gusto</p>
+                    <p class="grey-text">Transfer your payroll, benefits, and HR from another provider</p>
+                </div>
+                <div>
+                    <p class="blue-text">For accountants</p>
+                    <p class="grey-text">A reward program for accounts and bookkeepers</p>
+                </div>
+                <div>
+                    <p class="blue-text">Pricing</p>
+                    <p class="grey-text">Starting at just $45 per month</p>
+                </div>
+            </div>
+            <div id="box2">
+                <p class="f-title">All-in-one platform</p>
+                <p class="subtitle">Payroll</p>
+                <p class="subtitle">Employee benefits</p>
+                <p class="subtitle">Health insurance</p>
+                <p class="subtitle">Financial benefits</p>
+                <p class="subtitle">Hiring and onboarding</p>
+                <p class="subtitle">Expert HR</p>
+                <p class="subtitle">Time tracking tools</p>
+                <p class="subtitle">Worker's comp</p>
+                <p class="subtitle">Integrations</p>
+                <p class="subtitle">Gusto Wallet</p>
+                <p class="subtitle">Gusto Partner Offers</p>
+            </div>
+            <div id="box3">
+                <p class="f-title">Tools</p>
+                <p class="subtitle">Small Business Financial Relief</p>
+                <p class="subtitle">Employer Tax calculator</p>
+                <p class="subtitle">Burn rate calculator</p>
+                <p class="subtitle">Salary comparison tool</p>
+                <p class="subtitle">New hire checklist</p>
+                <p class="subtitle">Small business guides</p>
+            </div>
+            <div id="box4">
+                <p class="f-title">About Gusto</p>
+                <p class="subtitle">About</p>
+                <p class="subtitle">Careers - <a class="blue-text">We're hiring!</a></p>
+                <p class="subtitle">Press</p>
+                <p class="subtitle">Contact</p>
+                <p class="subtitle">Investors</p>
+                <p class="subtitle">Affiliate program</p>
+            </div>
+            <div id="box5">
+                <p class="f-title">For Accountants</p>
+                <p class="subtitle">Become a partner</p>
+                <p class="subtitle">People Advisory</p>
+                <p class="subtitle">Certification</p>
+                <p class="subtitle">Gusto Pro</p>
+                <p class="subtitle">Gusto partner blog</p>
+            </div>
+            <div id="box6">
+                <p class="f-title">For Developers</p>
+                <p class="subtitle">Gusto Embedded Payroll</p>
+                <p class="subtitle">Build with Gusto</p>
+                <p class="subtitle">Developer resources</p>
+            </div>
+            <div id="box7">
+                <p class="f-title">Resources</p>
+                <p class="subtitle">Interactive demo</p>
+                <p class="subtitle">Compare</p>
+                <p class="subtitle">Find an accountant</p>
+                <p class="subtitle">Help Center</p>
+                <p class="subtitle">FAQs</p>
+                <p class="subtitle">Customer Stories</p>
+            </div>
+            <div id="box8">
+                <p class="f-title">Contact us</p>
+                <p class="subtitle">Talk to sales - <a class="blue-text">(866) 312-1520</a></p>
+                <p class="subtitle">Talk to support - <a class="blue-text">Sign</a></p>
+                <p class="f-title">Licenses</p>
+                <p class="subtitle">Gusto Capital, LLC NMLS ID: <a class="blue-text">1845463</a></p>
+                <p class="subtitle">ZenPayroll, Inc. NMLS ID: <a class="blue-text">1737896</a></p>
+            </div>
+        </div>
+        <div id="talk-shop">
+            <p class="f-title">Talk Shop: <a class="blue-text">Small business resources</a></p>
+            <div class="subtitle border"></div>
+        </div>
+        <div class="cont">
+            <div id="box9">
+                <p class="blue-text">Talk Shop blog</p>
+                <p class="grey-text">Advice and information for small business and their teams</p>
+            </div>
+            <div id="box10">
+                <p class="subtitle">Running payroll</p>
+                <p class="subtitle">Employee benefits</p>
+                <p class="subtitle">Health insurance</p>
+                <p class="subtitle">Prople management</p>
+            </div>
+            <div id="box11">
+                <p class="subtitle">Workers' comp</p>
+                <p class="subtitle">Starting a business</p>
+                <p class="subtitle">Business finances</p>
+            </div>
+            <div id="box12">
+                <p class="subtitle">Hiring</p>
+                <p class="subtitle">Growth</p>
+                <p class="subtitle">Taxes</p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
