@@ -143,6 +143,7 @@ a{
     margin: 0px auto 15px auto;
     font-size: 50px;
     font-weight: 500;
+    line-height: 45px;
 }
 .few-words-div{
     display: flex;
@@ -652,6 +653,9 @@ footer{
     #few-words{
         width: 70%;
         padding: 30px 15px 40px;
+    }
+    #few-words > p{
+        line-height: 30px;
     }
     .few-words-div > img{
         height: 43px;
