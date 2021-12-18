@@ -482,6 +482,1352 @@
         }
     </style>
 </head>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap"
+        rel="stylesheet">
+    <title>Need a new Provider</title>
+</head>
+<style>
+    h1 {
+        font-family: 'Playfair Display', serif;
+    }
+
+    p {
+        font-family: 'Prompt', sans-serif;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
+    #box1 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+    }
+
+    .imgBox1 {
+        margin-top: 30px;
+        width: 90%;
+        margin-right: 10%;
+    }
+
+    .heading {
+        font-size: 280%;
+        font-weight: 600;
+    }
+
+    .box1 {
+        margin: 0px 64px;
+    }
+
+    .box1>p {
+        margin-top: 150px;
+    }
+
+    #buttonBox {
+        height: 8%;
+    }
+
+    #buttonBox>button {
+        border-radius: 6px;
+        width: 29%;
+        height: 100%;
+    }
+
+    .btn1 {
+        background-color: #f45d48;
+        font-size: 94%;
+        color: white;
+        border: 1px solid #f45d48;
+    }
+
+    .btn2 {
+        font-weight: 600;
+        background-color: rgb(248, 239, 248);
+        margin: 0px 3%;
+        border: 1px solid rgb(248, 239, 248);
+    }
+
+    @media only screen and (max-width: 992px) {
+        #box1 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .heading {
+            font-size: 251%;
+        }
+
+        .imgBox1 {
+            width: 95%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .box1+div {
+            text-align: center;
+        }
+
+        .box1 {
+            margin: 0px 42px;
+            padding-bottom: 35px;
+        }
+
+        #buttonBox>button {
+            border-radius: 6px;
+            width: 19%;
+            height: 45px;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        #buttonBox>button {
+            border-radius: 6px;
+            width: 98%;
+            height: 45px;
+        }
+
+        .btn1 {
+            margin-bottom: 15px;
+        }
+
+        .btn2 {
+            margin-left: 0px;
+        }
+
+        .heading {
+            font-size: 217%;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        .box1 {
+            margin: 0px 12px;
+        }
+    }
+
+    /* CSS of Box2 starts from here */
+    #box2 {
+        background-color: #f8f5f2;
+        padding-top: 150px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        padding-bottom: 150px;
+    }
+
+    .imgBox2 {
+        width: 80%;
+        margin: 11% 0% 0% 4%;
+    }
+
+    .paraSize {
+        font-size: 15px;
+        line-height: 149%;
+    }
+
+    #infoBox2 {
+        margin-right: 6%;
+        margin-left: 16%;
+    }
+
+    #infoBox2>div {
+        display: grid;
+        grid-template-columns: 15% 85%;
+        grid-template-rows: auto;
+        margin-top: 8% !important;
+        background-color: white;
+        border: 1px solid rgb(161, 197, 197);
+        padding: 9px;
+        border-radius: 6px;
+
+    }
+
+    #infoBox2>div>div>img {
+        width: 100%;
+    }
+
+    #infoBox2>h1 {
+        font-size: 240%;
+        font-weight: 600;
+    }
+
+    @media only screen and (max-width: 992px) {
+        #infoBox2>h1 {
+            font-size: 226%;
+            font-weight: 600;
+            line-height: 45px;
+        }
+
+        .imgBox2 {
+            width: 95%;
+            margin: 29% 0% 0% 0%;
+        }
+
+        #infoBox2 {
+            margin-right: 6%;
+            margin-left: 10%;
+        }
+
+        #infoBox2>div {
+            grid-template-columns: 15% 85%;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        #infoBox2>div {
+            grid-template-columns: 21% 79%;
+        }
+
+        #infoBox2>h1 {
+            font-size: 199%;
+            line-height: 39px;
+        }
+
+        .imgBox2 {
+            margin: 47% 0% 0% 0%;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        #box2 {
+            width: 84%;
+            padding: 0% 8%;
+            margin: auto;
+            padding-top: 150px;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto;
+        }
+
+        #infoBox2>h1 {
+            line-height: 37px;
+        }
+
+        #infoBox2>div {
+            grid-template-columns: 15% 85%;
+        }
+
+        .imgBox2 {
+            width: 100%;
+            margin: 2% auto;
+        }
+
+        #infoBox2 {
+            margin-right: 0%;
+            margin-left: 0%;
+        }
+    }
+
+    /* CSS of box3 starts from here */
+    #box3 {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto;
+        grid-gap: 3%;
+        margin: 100px auto 100px auto;
+        width: 90%;
+    }
+
+    .boxOfBox3 {
+        text-align: center;
+    }
+
+    .boxOfBox3 p {
+        font-size: 100%;
+        font-weight: 500;
+        line-height: 125%;
+    }
+
+    @media only screen and (max-width: 992px) {
+        .boxOfBox3 p {
+            font-size: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        #box3 {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            grid-gap: 4%;
+            width: 92%;
+        }
+
+        .boxOfBox3 {
+            width: 80%;
+            margin: auto;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        #box3 {
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto auto;
+        }
+
+        .boxOfBox3 p {
+            font-size: 100%;
+        }
+    }
+
+    /* CSS of box4 Starts from here. */
+    #box4 {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto;
+        grid-gap: 2%;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: 150px;
+    }
+
+    .boxOfBox4 {
+        height: 350px;
+        border: 2px solid rgb(248, 239, 248);
+        box-shadow: 0px 0px 9px 5px rgb(248, 239, 248);
+        border-radius: 6px;
+    }
+
+    .boxOfBox4>img {
+        width: 100%;
+    }
+
+    .boxOfBox4 p {
+        margin-left: 5%;
+        font-size: 15px;
+        margin-right: 6%;
+        line-height: 24px;
+    }
+
+    .boxOfBox4>img+p {
+        font-weight: 500;
+    }
+
+    .box1ofBox4 {
+        margin: 3%;
+    }
+
+    .box1ofBox4>h1 {
+        font-size: 35px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .box1ofBox4>button {
+        font-weight: 600;
+        color: teal;
+        margin: 3% 0%;
+        border: 1px solid white;
+        background-color: white;
+        font-size: 17px;
+    }
+
+    .box1ofBox4>p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-right: 6%;
+    }
+
+    @media only screen and (max-width: 992px) {
+        #box4 {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            grid-gap: 2%;
+        }
+
+        .box1ofBox4>button {
+            margin: 3% 0%;
+            padding: 0%;
+        }
+
+        .boxOfBox4 {
+            height: 420px;
+        }
+    }
+
+    @media only screen and (max-width:768px) {
+        #box4 {
+            grid-template-columns: 70%;
+            grid-template-rows: auto auto auto auto;
+            margin: 0px 15%;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        #box4 {
+            grid-template-columns: auto;
+            margin: auto;
+        }
+
+        .box1ofBox4>h1 {
+            font-size: 30px;
+        }
+
+        .box1ofBox4>p {
+            font-size: 15px;
+        }
+
+        .box1ofBox4>button {
+            margin: 0% 0%;
+        }
+
+
+    }
+
+    /* The CSS of box5 starts from here */
+    #box5 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        background-color: #f8f5f2;
+        padding: 150px 0px;
+    }
+
+    #box5>div>img {
+        margin-left: 29%;
+        width: 64%;
+        margin-right: 7%;
+        margin-top: 10%;
+    }
+
+    .infoBox5 {
+        margin: 0px 16% 0px 16%;
+    }
+
+    #box5 p {
+        font-weight: 300;
+    }
+
+    .infoBox5>h1 {
+        font-size: 35px;
+    }
+
+    .infoBox5>p {
+        font-size: 16px;
+    }
+
+    .infoBox5>div {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        grid-gap: 10%;
+        margin-bottom: 70px;
+        margin-top: 30px;
+    }
+
+    .infoBox5>div>div {
+        font-size: 17px;
+    }
+
+    .tickBox {
+        display: flex;
+        border-bottom: 1px solid white;
+    }
+
+    .tickBox>p {
+        margin: 0px 0px 0px 8%;
+    }
+
+    .infoBox5>button {
+        height: 8%;
+        width: 38%;
+        background-color: white;
+        border: 1px solid white;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 4px;
+    }
+
+    @media only screen and (max-width: 992px) {
+        #box5>div>img {
+            margin-left: 12%;
+            width: 87%;
+        }
+
+        .infoBox5 {
+            margin: 0px 5% 0px 9%;
+        }
+
+        .infoBox5>h1 {
+            font-size: 20px;
+        }
+
+        .infoBox5>button {
+            height: 10%;
+        }
+    }
+
+    @media only screen and (max-width:768px) {
+        #box5 p {
+            font-weight: 300;
+        }
+
+        #box5 {
+            padding: 100px 0px;
+            margin-top: 150px;
+        }
+
+        .infoBox5>div {
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto auto auto auto;
+            grid-gap: 7%;
+            margin-top: 22px;
+        }
+
+        .infoBox5>button {
+            width: 67%;
+            height: 8%;
+        }
+
+        #box5>div>img {
+            margin-top: 150px;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        #box5 {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto;
+            background-color: #f8f5f2;
+            padding: 150px 0px;
+        }
+
+        #box5>.ab {
+            text-align: center;
+        }
+
+        #box5>div>img {
+            width: 84%;
+            margin: auto;
+        }
+
+        .infoBox5>h1 {
+            font-size: 27px;
+        }
+
+        .infoBox5>p {
+            font-size: 15px;
+            font-weight: 300;
+        }
+
+        .infoBox5 {
+            margin: 0px 0% 0px 8%;
+            font-weight: 300;
+        }
+
+        .infoBox5>button {
+            width: 35%;
+        }
+    }
+
+    /* The CSS for box6 starts from here */
+    #box6 {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+    }
+
+    .infoBox6 {
+        margin-left: 15%;
+        margin-right: 5%;
+    }
+
+    .imgBox6>img {
+        width: 80%;
+        margin-left: 4%;
+        margin-top: 10%
+    }
+
+    .infoBox6>p {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    #box6 p {
+        font-weight: 300;
+    }
+
+    .infoBox6>button {
+        height: 10%;
+        width: 38%;
+        background-color: #f45d48;
+        border: 1px solid #f45d48;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 4px;
+        color: white;
+    }
+
+    .infoBox6>h1 {
+        font-size: 35px;
+    }
+
+    .infoBox6>div {
+        display: flex;
+        background-color: #f8f5f2;
+        margin-top: 40px;
+        height: 12%;
+        padding: 4%;
+        border-radius: 6px;
+    }
+
+    .infoBox6>div>p {
+        margin-top: 0px;
+        margin-left: 5%;
+        font-size: 13px;
+        margin-right: 31px
+    }
+
+    @media only screen and (max-width: 992px) {
+        .imgBox6>img {
+            width: 90%;
+            margin-left: 3%;
+            margin-top: 23%;
+        }
+
+        .infoBox6 {
+            margin-left: 10%;
+        }
+
+        .infoBox6>h1 {
+            font-size: 31px;
+            line-height: 42px;
+        }
+
+        .infoBox6>div>p {
+            margin-left: 5%;
+            font-size: 15px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+        }
+
+        .infoBox6>button {
+            height: 9%;
+            width: 39%;
+        }
+
+        .infoBox6>div {
+            height: 14%;
+        }
+    }
+
+    @media only screen and (max-width:768px) {
+        #box6 {
+            grid-template-columns: 60% 40%;
+        }
+
+        .imgBox6>img {
+            margin-top: 55%;
+        }
+
+        .infoBox6>div>p {
+            font-size: 13px;
+        }
+
+        .infoBox6 {
+            margin-right: 0%;
+        }
+
+        .infoBox6 {
+            margin-left: 8%;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        #box6 {
+            grid-template-columns: auto;
+            grid-template-rows: auto auto;
+        }
+
+        .infoBox6 {
+            margin: 4%;
+        }
+
+        .imgBox6>img {
+            width: 90%;
+            margin-left: 0%;
+            margin-top: 0px;
+        }
+
+        .imgBox6 {
+            text-align: center;
+        }
+    }
+
+    /* The CSS of Box7 starts from here. */
+    #box7 {
+        width: 50%;
+        margin: 300px auto;
+
+    }
+
+    .divOfBox7 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        width: 74%;
+        border-top: 1px solid rgb(130, 228, 228);
+        border-bottom: 1px solid rgb(130, 228, 228);
+        margin: auto;
+    }
+
+    .divOfBox7>p {
+        margin-top: 0%;
+        margin-bottom: 0%;
+        border-left: 1px solid rgb(130, 228, 228);
+        padding-left: 5%;
+        margin-left: 10%;
+        padding-right: 5%;
+        font-size: 13px;
+    }
+
+    .divOfBox7>img {
+        padding: 0px 11%;
+    }
+
+    #box7>p {
+        text-align: center;
+        font-size: 18px;
+        color: red;
+    }
+
+    #box7>h1 {
+        text-align: center;
+        font-size: 29px;
+    }
+
+    .arrow {
+        border: solid #0a8080;
+        border-width: 0 3px 3px 0;
+        border-radius: 0;
+        display: inline-block;
+        padding: 6px;
+        transform: rotate(-45deg);
+        margin-top: 112%;
+    }
+
+    @media only screen and (max-width: 992px) {
+        #box7 {
+            margin: 200px auto;
+            width: 90%;
+        }
+
+        #box7>h1 {
+            text-align: center;
+            font-size: 26px;
+            line-height: 45px;
+        }
+    }
+
+    @media only screen and (max-width:768px) {
+        #box7>h1 {
+            line-height: 33px;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        #box7 {
+            width: 85%;
+        }
+
+        #box7>h1 {
+            font-size: 22px;
+            line-height: 33px;
+        }
+
+        .divOfBox7>p {
+            margin-top: 2%;
+            margin-bottom: 0%;
+            border-left: 0px solid rgb(130, 228, 228);
+            border-top: 1px solid rgb(130, 228, 228);
+            padding-left: 0%;
+            padding-top: 8px;
+            margin-left: 0%;
+            padding-right: 0%;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .divOfBox7>img {
+            padding: 0px 0%;
+            width: 59%;
+            margin: auto;
+        }
+
+        .divOfBox7 {
+            width: 91%;
+        }
+
+        .divOfBox7 {
+            display: flex;
+            flex-direction: column;
+            width: 74%;
+            border-top: 0px solid rgb(130, 228, 228);
+            border-bottom: 0px solid rgb(130, 228, 228);
+            margin: auto;
+            text-align: center;
+        }
+    }
+
+    /* The CSS of Box8 starts from here. */
+    #box8 {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: auto;
+        margin-bottom: 150px;
+    }
+
+    #flexBox8 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gridBox8 {
+        display: grid;
+        grid-template-columns: 60% 35% 5%;
+        grid-template-rows: auto;
+    }
+
+    .gridBox8 p {
+        font-size: 20px;
+        margin-top: 8%;
+        margin-bottom: 10%;
+        margin-left: 10%;
+    }
+
+    #box8 h1 {
+        font-size: 35px;
+        margin-bottom: 0%;
+        margin-left: 5%;
+    }
+
+    @media only screen and (max-width: 992px) {
+        .gridBox8 p {
+            margin-bottom: 8%;
+            margin-left: 6%;
+        }
+
+        #box8 h1 {
+            font-size: 35px;
+            margin-bottom: 0%;
+            margin-left: 4%;
+        }
+
+        #box8 {
+            grid-template-columns: auto;
+        }
+    }
+
+    @media only screen and (max-width:768px) {
+        .gridBox8 p {
+            font-size: 18px;
+        }
+
+        #box8 h1 {
+            font-size: 24px;
+            margin-bottom: 2%;
+        }
+
+        #box8 {
+            width: 88%;
+            margin: auto;
+        }
+
+    }
+
+    @media only screen and (max-width: 600px) {
+        #box8 {
+            width: 100%;
+        }
+
+        #box8 h1 {
+            font-size: 27px;
+            margin-bottom: 0%;
+            margin-left: 5px;
+        }
+
+        .gridBox8 p {
+            font-size: 19px;
+            margin-left: 5px;
+            margin-bottom: 10px;
+        }
+
+        .arrow {
+            margin-top: 172%;
+        }
+
+        .gridBox8 {
+            grid-template-columns: 91% 3% 5%;
+        }
+    }
+
+    /* The CSS of box9 starts  here */
+
+
+    #box9 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(249, 253, 253);
+    }
+
+    .infoBox9>p {
+        font-size: 15px;
+        text-align: center;
+        font-weight: 300;
+    }
+
+    .infoBox9>h1 {
+        font-size: 35px;
+        text-align: center;
+        margin: 0px;
+
+    }
+
+    .infoBox9 {
+        width: 70%;
+        margin: auto;
+    }
+
+    .priceBox9 {
+        display: grid;
+        grid-template-columns: 34% 33% 33%;
+        grid-template-rows: auto;
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .priceBox9 p {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .dim {
+        border-top: 1px solid white;
+        border-bottom: 1.5px solid rgb(149, 180, 180);
+        height: 65px;
+        padding: 0px 23px;
+    }
+
+    .dim>select {
+        padding: 4% 0%;
+        margin: 2.5% 0%;
+        width: 100%;
+        border: 2px solid black;
+        border-radius: 4px;
+    }
+
+    .B-border {
+        border-bottom: 3px solid rgb(148, 156, 156);
+    }
+
+    .c-1 {
+        background-color: rgb(232, 241, 241);
+    }
+
+    .shadow {
+        box-shadow: 0px 5px 5px 10px rgb(248 239 248);
+    }
+
+    .tick {
+        color: rgb(104, 153, 153);
+    }
+
+    .last {
+        border-bottom: 2px solid rgb(249, 253, 253);
+    }
+
+    .buttonOfBox9 {
+        text-align: center;
+        height: 49px;
+        width: 11%;
+        background-color: rgb(232, 241, 241);
+        margin-top: 10px;
+        border: 1px solid rgb(232, 241, 241);
+        border-radius: 4px;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    .btn+div>p {
+        text-align: center;
+        width: 61%;
+        margin: 26px auto;
+        color: rgb(102, 151, 151);
+        font-size: 12px;
+    }
+
+    #dis-none {
+        display: none;
+    }
+
+    #dis-cont {
+        display: contents;
+    }
+
+    @media only screen and (max-width: 992px) {
+        .infoBox9>h1 {
+            font-size: 30px;
+        }
+
+        .infoBox9 {
+            width: 94%;
+        }
+
+        .infoBox9>p {
+            font-size: 18px;
+        }
+
+        .priceBox9 p {
+            font-size: 16px;
+        }
+
+        .buttonOfBox9 {
+            width: 15%;
+        }
+
+        .btn+div>p {
+            width: 90%;
+        }
+
+        .priceBox9 {
+            width: 95%;
+        }
+    }
+
+    @media only screen and (max-width:768px) {
+        #box9 {
+            padding-top: 101px;
+            width: 95%;
+            margin: auto;
+        }
+
+        .buttonOfBox9 {
+            width: 22%;
+        }
+
+        .infoBox9>p {
+            font-size: 14px;
+        }
+
+        .infoBox9>h1 {
+            font-size: 23px;
+        }
+    }
+
+    @media only screen and (max-width:600px) {
+        .infoBox9 {
+            width: 100%;
+        }
+
+        .infoBox9>h1 {
+            font-size: 26px;
+        }
+
+        .dim {
+            height: 112px;
+        }
+
+        .buttonOfBox9 {
+            width: 34%;
+        }
+
+        .btn+div>p {
+            width: 100%;
+        }
+
+        .infoBox9>p {
+            font-size: 14px;
+        }
+    }
+
+    /* The CSS for box10 starts from here */
+    #box10 {
+        width: 70%;
+        margin: 150px auto;
+    }
+
+    #box10>h1 {
+        margin-top: 0%;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #box10>p {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    #icons {
+        margin-top: 40px;
+        display: flex;
+        width: auto;
+        text-align: center;
+    }
+
+    #icons>div>h4 {
+        margin: 7px;
+        text-align: center;
+    }
+
+    #icons>div {
+        text-align: center;
+        width: 100%;
+    }
+
+    @media only screen and (max-width: 992px) {
+        #box10>h1 {
+            font-size: 40px;
+        }
+
+        #box10 {
+            width: 92%;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        #icons {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
+            grid-gap: 35px;
+        }
+
+        #box10>h1 {
+            font-size: 30px;
+        }
+
+        #box10>p {
+            font-size: 15px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        #box10>h1 {
+            font-size: 25px;
+        }
+
+        #icons {
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto auto;
+            grid-gap: 45px;
+        }
+
+        #box10>p {
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+
+    /* The CSS for Box11 starts from here */
+    #box11 {
+
+        width: 40%;
+        margin: 200px auto;
+        text-align: center;
+    }
+
+    #box11>p {
+        color: red;
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    #box11>h1 {
+        font-size: 39px;
+        margin-top: 14px;
+        text-align: center;
+    }
+
+    #box11>button {
+        border-radius: 6px;
+        width: 126px;
+        height: 41px;
+        background-color: #f45d48;
+        border: 1px solid #f45d48;
+        color: white;
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 992px) {
+        #box11 {
+            width: 49%;
+        }
+
+        #box11>h1 {
+            font-size: 36px;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        #box11 {
+            width: 85%;
+        }
+
+        #box11>h1 {
+            font-size: 30px;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        #box11>h1 {
+            font-size: 27px;
+        }
+    }
+
+    /* CSS of our header is starting from here. */
+    .nav-bar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+    }
+
+    .header {
+        background-color: white;
+        padding-top: 10px;
+        display: grid;
+        grid-template-columns: 6% auto auto auto auto auto auto auto auto auto 6%;
+        grid-template-rows: auto;
+        grid-gap: 5px;
+    }
+
+    .logo {
+        padding: 10px;
+        padding-right: 0;
+    }
+
+    .logo img {
+        width: 95px;
+    }
+
+    .black-text p {
+        font-family: 'Prompt', sans-serif;
+        font-size: 15px;
+        color: black;
+    }
+
+    .black-text {
+        padding: 10px;
+        text-align: center;
+        padding-top: 0;
+    }
+
+    .black-text p:hover {
+        color: rgb(10, 128, 128);
+    }
+
+    .topic {
+        text-decoration: none;
+    }
+
+    .sign-in-nav {
+        background-color: rgb(248, 245, 242);
+        border: 0;
+        padding: 0 15px;
+        border-radius: 5px;
+    }
+
+    @media screen and (max-width: 1150px) {
+        .nav-bar {
+            position: static;
+        }
+
+        .header {
+            grid-template-columns: auto;
+        }
+
+        #hid {
+            display: none;
+        }
+    }
+
+    /* This is the CSS of footer */
+    footer {
+        width: 90%;
+        padding: 55px 15px 50px 15px;
+        margin: auto;
+        font-size: 15px;
+    }
+
+    .cont {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+    }
+
+    #talk-shop {
+        display: flex;
+        margin-bottom: 10px;
+        padding: 0px 15px;
+    }
+
+    #talk-shop>div {
+        border-top: 1px solid #e7e7ec;
+        width: 66.666%;
+        margin: auto;
+    }
+
+    .cont>div {
+        padding: 0px 15px 40px 15px;
+    }
+
+    .f-title {
+        color: black;
+        font-weight: 600;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .blue-text {
+        color: #0A8080;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .grey-text {
+        color: #525257;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .subtitle {
+        color: #525257;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .subtitle:hover,
+    .blue-text:hover {
+        color: #007bff;
+    }
+
+    .subtitle-a {
+        font-weight: 300;
+        color: black;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1200px) {
+        .cont {
+            grid-template-columns: repeat(2, 50%);
+            gap: 5%;
+        }
+    }
+
+    @media only screen and (max-width: 766px) {
+        .cont {
+            display: grid;
+            grid-template-columns: repeat(1, 100%);
+        }
+    }
+</style>
 
 <body>
     <section class="nav-bar">
@@ -553,6 +1899,311 @@
             <h1>This isn’t an easy time to run a business. But we’re here to help.</h1>
             <p>Why Gusto</p>
         </div>
+    <!-- The above Html is for our header -->
+    <div id="box1">
+        <div class="box1">
+            <p style="color: red; font-size: 105%;">Switching to Gusto</p>
+            <h1 class="heading">All your HR needs, all in one place.</h1>
+            <div id="buttonBox">
+                <button class="btn1">Schedule a
+                    call</button>
+                <button class="btn2">Get
+                    Started</button>
+            </div>
+        </div>
+        <div>
+            <img src="https://prod.gusto-assets.com/wp-content/uploads/hero_screen%402x.gif" class="imgBox1" />
+        </div>
+    </div>
+    <div id="box2">
+        <div id="infoBox2">
+            <p style="color: red;  font-weight: 600;" class="paraSize">All-in-one solution</p>
+            <h1>Switching to Gusto just makes sense.</h1>
+            <p class="paraSize">The best thing you can do for your business is make smart decisions that support your
+                team and bottom line.</p>
+            <p class="paraSize">With Gusto, you get an expansive HR platform and all-in-one solution for payroll,
+                employee benefits, hiring, onboarding, provisioning, accounting, tax filings, and more. Lots more.</p>
+            <div>
+                <div><img
+                        src="https://prod.gusto-assets.com/wp-content/uploads/switching_makes_sense_callout_profile%402x.png" />
+                </div>
+                <div style="width: 90%;">
+                    <p style="margin: 2% 6%;" class="paraSize">A dedicated team will be there when you have questions or
+                        need support.</p>
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <img src="https://prod.gusto-assets.com/wp-content/uploads/switching_makes_sense%402x.png"
+                class="imgBox2" />
+        </div>
+    </div>
+    <div id="box3">
+        <div class="boxOfBox3">
+            <div>
+                <img src="https://prod.gusto-assets.com/wp-content/uploads/illo-sm-trophy.png" />
+                <p>All-in-one solution</p>
+            </div>
+            <p>At last! Manage your payroll, benefits, and HR needs in one place.</p>
+        </div>
+        <div class="boxOfBox3">
+            <div>
+                <img src="https://prod.gusto-assets.com/wp-content/uploads/illo-sm-computer-desktop.png" />
+                <p>Remote-friendly tools</p>
+            </div>
+            <p>Virtual self-onboarding and hiring documents, signed and stored online.</p>
+        </div>
+        <div class="boxOfBox3">
+            <div>
+                <img src="https://prod.gusto-assets.com/wp-content/uploads/illo-sm-dollar-bill.png" />
+                <p>Truly transparent pricing</p>
+            </div>
+            <p>Unlike other providers, our pricing is transparent with no hidden fees.</p>
+        </div>
+        <div class="boxOfBox3">
+            <div>
+                <img src="https://prod.gusto-assets.com/wp-content/uploads/illo-sm-badge.png" />
+                <p>Best-in-class support</p>
+            </div>
+            <p>If you have questions, our support team is just a call or email away.</p>
+        </div>
+    </div>
+    <div id="box4">
+        <div class="box1ofBox4">
+            <h1>Here’s how it works.</h1>
+            <p>We’ll make sure you’re all set up and ready to go by your next payroll cycle.</p>
+            <button>Get Started</button>
+        </div>
+        <div class="boxOfBox4">
+            <img src="https://prod.gusto-assets.com/wp-content/uploads/how_it_works_step1%402x.png" />
+            <p>1. Begin Gusto’s step-by-step onboarding process.</p>
+            <p>We’ll tell you what forms and information you need to complete each step</p>
+        </div>
+        <div class="boxOfBox4">
+            <img src="https://prod.gusto-assets.com/wp-content/uploads/how_it_works_step2%402x.png" />
+            <p>2. Lean on our team for questions and support.</p>
+            <p>We’ll help you set up your benefits, payroll deductions, PTO policy, and integrations.</p>
+        </div>
+        <div class="boxOfBox4">
+            <img src="https://prod.gusto-assets.com/wp-content/uploads/how_it_works_step3%402x.png" />
+            <p style="margin-right: 0px;">3. We’ll confirm when your setup is complete.</p>
+            <p>Woohoo! Now you can run your payroll in the next cycle and rely on Gusto for your HR needs.</p>
+        </div>
+    </div>
+    <div id="box5">
+        <div class="ab">
+            <img src="https://prod.gusto-assets.com/wp-content/uploads/integrations_logos%402x-945x1024.png" />
+        </div>
+        <div class="infoBox5">
+            <p style="color: red;">Integrations</p>
+            <h1>Yep, we integrate with that.</h1>
+            <p>With Gusto, you can automatically sync payroll data with your favorite tools, saving you time and money.
+                That means no more manual entry, fewer accounting mistakes, and airtight business operations.</p>
+            <div>
+                <div class="tickBox">
+                    &#10004; <p>Accounting</p>
+                </div>
+                <div class="tickBox">
+                    &#10004; <p>Business operation</p>
+                </div>
+                <div class="tickBox">
+                    &#10004; <p>Time tracking</p>
+                </div>
+                <div class="tickBox">
+                    &#10004; <p>Tax preparation</p>
+                </div>
+                <div class="tickBox">
+                    &#10004; <p>Point of sale</p>
+                </div>
+                <div class="tickBox">
+                    &#10004; <p>Learning & development</p>
+                </div>
+            </div>
+            <button>See all integrations</button>
+        </div>
+    </div>
+    <div id="box6">
+        <div class="infoBox6">
+            <p style="color: red;">The Concierge plan</p>
+            <h1>Find a plan for your growing business.</h1>
+            <p>Our most premium plan is called Concierge, designed for businesses looking for a white-glove transfer,
+                personalized support, and certified HR professionals just a call away.</p>
+            <p>Want to explore other options?</p>
+            <button>See all plans</button>
+            <div>
+                <img src="https://prod.gusto-assets.com/wp-content/uploads/concierge_callout_illo%402x.png" />
+                <p style="margin-top: 0px;">Other providers charge extra fees for setting up, filing W-2’s, off-cycle
+                    payroll runs, and more.
+                    With Gusto, it’s all included.</p>
+            </div>
+        </div>
+        <div class="imgBox6">
+            <img src="https://prod.gusto-assets.com/wp-content/uploads/concierge_plan%402x.png" />
+        </div>
+    </div>
+    <div id="box7">
+        <p>Priority support</p>
+        <h1>"I love having a Concierge team I can call on if I have any questions."</h1>
+        <div class="divOfBox7">
+            <img src="https://prod.gusto-assets.com/wp-content/uploads/Regina-Massey.png" />
+            <p>Chief Operating Officer
+                Perioperative Services of Mississippi</p>
+        </div>
+    </div>
+    <div id="box8">
+        <div id="flexBox8">
+            <div>
+                <div>
+                    <h1>Any questions? Ask away.</h1>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="gridBox8">
+                <div>
+                    <p>When is the best time to switch?</p>
+                </div>
+                <div class="extraSpace"></div>
+                <div><i class="arrow"></i></div>
+            </div>
+            <div class="gridBox8">
+                <div>
+                    <p>How do I set up benefits?</p>
+                </div>
+                <div class="extraSpace"></div>
+                <div><i class="arrow"></i></div>
+            </div>
+            <div class="gridBox8">
+                <div>
+                    <p>How much does Gusto cost?</p>
+                </div>
+                <div class="extraSpace"></div>
+                <div><i class="arrow"></i></div>
+            </div>
+            <div class="gridBox8">
+                <div>
+                    <p>I have more questions.</p>
+                </div>
+                <div class="extraSpace"></div>
+                <div><i class="arrow"></i></div>
+            </div>
+        </div>
+        <div></div>
+    </div>
+    <div id="box9">
+        <div class="infoBox9">
+            <h1>Compare Gusto to other payroll providers.</h1>
+        </div>
+        <div class="infoBox9">
+            <p>Click the dropdown menu to see how Gusto stacks up with other providers when it comes to pricing,
+                payroll,
+                benefits, HR tools, customer service, and more. (Spoiler: They got nothing on us.)</p>
+        </div>
+        <div class="priceBox9">
+            <div>
+                <div class="dim B-border"></div>
+                <div class="dim c-1">
+                    <p>Pricing</p>
+                </div>
+                <div class="dim">
+                    <p>Monthly fee</p>
+                </div>
+                <div class="dim">
+                    <p>Setup fee</p>
+                </div>
+                <div class="dim c-1">
+                    <p>Payroll</p>
+                </div>
+                <div class="dim">
+                    <p>Unlimited payrolls</p>
+                </div>
+                <div class="dim">
+                    <p style="color: rgb(104, 153, 153);">Automated federal and state tax filling</p>
+                </div>
+                <div class="dim last">
+                    <p style="color: rgb(104, 153, 153);">Direct deposit</p>
+                </div>
+            </div>
+            <div class="shadow">
+                <div class="dim B-border" style="background-color: rgb(72, 138, 138);">
+                    <p style="color: white;">Gusto</p>
+                </div>
+                <div class="dim c-1"></div>
+                <div class="dim">
+                    <p>Starting at $39/mo. + $6/mo. per user</p>
+                </div>
+                <div class="dim">
+                    <p>Free</p>
+                </div>
+                <div class="dim c-1"></div>
+                <div class="dim tick">
+                    <p>&#10004;</p>
+                </div>
+                <div class="dim tick">
+                    <p>&#10004;</p>
+                </div>
+                <div class="dim tick last">
+                    <p>&#10004;</p>
+                </div>
+            </div>
+            <div>
+                <div class="dim B-border">
+                    <select id="s-text">
+                        <option>
+                            ADP Run
+                        </option>
+                        <option>
+                            Paychex
+                        </option>
+                        <option>
+                            QuickBooks Payroll
+                        </option>
+                        <option>
+                            Square Payroll
+                        </option>
+                        <option>
+                            Justworks
+                        </option>
+                    </select>
+                </div>
+                <div class="dim c-1"></div>
+                <div class="dim">
+                    <p id="textChange">No upfront pricing</p>
+                </div>
+                <div class="dim" style="display: flex;">
+                    <div id="sym">
+                        <p><img src="https://prod.gusto-assets.com/wp-content/uploads/compare-table-dollar.svg" /></p>
+                    </div>
+                    <p id="free">Extra fees</p>
+                </div>
+                <div class="dim c-1"></div>
+                <div class="dim tick">
+                    <p>&#10004;</p>
+                </div>
+                <div class="dim tick">
+                    <p>&#10004;</p>
+                </div>
+                <div class="dim tick last">
+                    <p>&#10004;</p>
+                </div>
+            </div>
+        </div>
+        <div class="btn">
+            <button class="buttonOfBox9">See all features</button>
+        </div>
+        <div>
+            <p>Competitive data on this page was collected as of June 25th, 2020 and is subject to change or update.
+                Gusto does not make any representations as to the completeness or accuracy of the information on this
+                page. All Gusto services listed in the payroll features comparison chart are provided by Gusto or by one
+                of Gusto’s trusted partners.</p>
+        </div>
+    </div>
+    <div id="box10">
+        <p style="color: red;">The people platform</p>
+        <h1>So much more than payroll</h1>
+        <p>Teams are at the heart of every business. That’s why we built the people platform — one place
+            with everything you need to build an incredible workplace.</p>
         <div id="icons">
             <div>
                 <img
@@ -593,12 +2244,18 @@
     <div id="price">
         <p style="color: red;">Prices start at just $45/month</p>
         <h1>Join more than 200,000 businesses and their teams.</h1>
+    </div>
+    <div id="box11">
+        <p>Prices now start at just $45/month</p>
+        <h1>Get your team working
+            with Gusto.</h1>
         <button>Get Started</button>
     </div>
     <!-- The html of footer -->
     <footer>
         <div class="cont">
             <div id="box1">
+            <div id="box-of-footer1">
                 <div>
                     <p class="f-title">Built for you</p>
                     <p class="blue-text">Gusto for new business</p>
@@ -618,6 +2275,7 @@
                 </div>
             </div>
             <div id="box2">
+            <div id="box-of-footer2">
                 <p class="f-title">All-in-one platform</p>
                 <p class="subtitle">Payroll</p>
                 <p class="subtitle">Employee benefits</p>
@@ -632,6 +2290,7 @@
                 <p class="subtitle">Gusto Partner Offers</p>
             </div>
             <div id="box3">
+            <div id="box-of-footer3">
                 <p class="f-title">Tools</p>
                 <p class="subtitle">Small Business Financial Relief</p>
                 <p class="subtitle">Employer Tax calculator</p>
@@ -641,6 +2300,7 @@
                 <p class="subtitle">Small business guides</p>
             </div>
             <div id="box4">
+            <div id="box-of-footer4">
                 <p class="f-title">About Gusto</p>
                 <p class="subtitle">About</p>
                 <p class="subtitle">Careers - <a class="blue-text">We're hiring!</a></p>
@@ -650,6 +2310,7 @@
                 <p class="subtitle">Affiliate program</p>
             </div>
             <div id="box5">
+            <div id="box-of-footer5">
                 <p class="f-title">For Accountants</p>
                 <p class="subtitle">Become a partner</p>
                 <p class="subtitle">People Advisory</p>
@@ -658,12 +2319,14 @@
                 <p class="subtitle">Gusto partner blog</p>
             </div>
             <div id="box6">
+            <div id="box-of-footer6">
                 <p class="f-title">For Developers</p>
                 <p class="subtitle">Gusto Embedded Payroll</p>
                 <p class="subtitle">Build with Gusto</p>
                 <p class="subtitle">Developer resources</p>
             </div>
             <div id="box7">
+            <div id="box-of-footer7">
                 <p class="f-title">Resources</p>
                 <p class="subtitle">Interactive demo</p>
                 <p class="subtitle">Compare</p>
@@ -673,6 +2336,7 @@
                 <p class="subtitle">Customer Stories</p>
             </div>
             <div id="box8">
+            <div id="box-of-footer8">
                 <p class="f-title">Contact us</p>
                 <p class="subtitle">Talk to sales - <a class="blue-text">(866) 312-1520</a></p>
                 <p class="subtitle">Talk to support - <a class="blue-text">Sign</a></p>
@@ -691,23 +2355,65 @@
                 <p class="grey-text">Advice and information for small business and their teams</p>
             </div>
             <div id="box10">
+            <div id="box-of-footer9">
+                <p class="blue-text">Talk Shop blog</p>
+                <p class="grey-text">Advice and information for small business and their teams</p>
+            </div>
+            <div id="box-of-footer10">
                 <p class="subtitle">Running payroll</p>
                 <p class="subtitle">Employee benefits</p>
                 <p class="subtitle">Health insurance</p>
                 <p class="subtitle">Prople management</p>
             </div>
             <div id="box11">
+            <div id="box-of-footer11">
                 <p class="subtitle">Workers' comp</p>
                 <p class="subtitle">Starting a business</p>
                 <p class="subtitle">Business finances</p>
             </div>
             <div id="box12">
+            <div id="box-of-footer12">
                 <p class="subtitle">Hiring</p>
                 <p class="subtitle">Growth</p>
                 <p class="subtitle">Taxes</p>
             </div>
         </div>
     </footer>
+</body>
+
+</html>
+    <script>
+        var option = document.getElementById('s-text');
+        var priceInfo = document.getElementById('textChange');
+        var sym = document.getElementById('sym');
+        var free = document.getElementById('free');
+        option.addEventListener('click', function () {
+            if (option.value == 'Square Payroll') {
+                priceInfo.textContent = "Starting at $29/mo. + $5/mo. per user";
+            }
+            else {
+                priceInfo.textContent = "No upfront pricing";
+            }
+
+            if (option.value == "QuickBooks Payroll") {
+                priceInfo.textContent = "Starting at $45/mo. + $4/mo. per user";
+            }
+            if (option.value == "Justworks") {
+                priceInfo.textContent = "Starting at $49/mo. per employee (for businesses with <25 employees)";
+            }
+
+
+            if (option.value == "Justworks" || option.value == "QuickBooks Payroll" || option.value == "Square Payroll") {
+                sym.setAttribute('id', 'dis-none')
+                free.textContent = 'Free';
+                console.log('working')
+            }
+            else {
+                sym.setAttribute('id', 'dis-cont');
+                free.textContent = "Extra fees"
+            }
+        })
+    </script>
 </body>
 
 </html>
